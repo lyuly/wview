@@ -1,0 +1,5 @@
+package.json
+pnpm-lock.yamal
+*.md
+.gitignore
+.eslintrc.cjs
