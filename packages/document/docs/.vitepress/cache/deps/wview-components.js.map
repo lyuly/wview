@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../wview-components/dist/wview-components.es.js"],
+  "sourcesContent": ["import { openBlock, createElementBlock } from \"vue\";\nconst _export_sfc = (sfc, props) => {\n  const target = sfc.__vccOpts || sfc;\n  for (const [key, val] of props) {\n    target[key] = val;\n  }\n  return target;\n};\nconst _sfc_main = {};\nfunction _sfc_render(_ctx, _cache) {\n  return openBlock(), createElementBlock(\"button\", null, \"测试\");\n}\nconst button = /* @__PURE__ */ _export_sfc(_sfc_main, [[\"render\", _sfc_render]]);\nexport {\n  button as Button,\n  button as WviewButton\n};\n"],
+  "mappings": ";;;;;;AACA,IAAM,cAAc,CAAC,KAAK,UAAU;AAClC,QAAM,SAAS,IAAI,aAAa;AAChC,aAAW,CAAC,KAAK,GAAG,KAAK,OAAO;AAC9B,WAAO,GAAG,IAAI;AAAA,EAChB;AACA,SAAO;AACT;AACA,IAAM,YAAY,CAAC;AACnB,SAAS,YAAY,MAAM,QAAQ;AACjC,SAAO,UAAU,GAAG,mBAAmB,UAAU,MAAM,IAAI;AAC7D;AACA,IAAM,SAAyB,YAAY,WAAW,CAAC,CAAC,UAAU,WAAW,CAAC,CAAC;",
+  "names": []
+}
