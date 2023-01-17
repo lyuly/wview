@@ -1,5 +1,7 @@
 package.json
-pnpm-lock.yamal
+pnpm-lock.yaml
 *.md
 .gitignore
-.eslintrc.cjs
+.eslintrc.yml
+.vscode/*
+packages/**/.vscode/*
