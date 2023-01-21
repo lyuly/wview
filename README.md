@@ -1,5 +1,17 @@
-# wview
+## Getting Started
 
-English | [中文](./README_CN.md)
+## Breaking change list
 
-this is wview components😘
+## Migration Tool
+
+## Playground
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+
+And thank you to all our backers! 🙏
+
+## License
+
+wview is open source software licensed as [MIT](./LICENSE).
