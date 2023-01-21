@@ -4,21 +4,27 @@ import Button from './components/button'
 
 <template>
   <div>这里是wview组件库</div>
-
   <Button class="btn normal"></Button>
   <Button class="btn warn"></Button>
   <Button class="btn error"></Button>
   <!-- TODO：鼠标悬浮时显示禁用原因(可自定义) -->
   <Button class="btn disabled" disabled></Button>
+
+  <Button class="btn"></Button>
 </template>
 
 <style lang="scss">
 .btn {
+
+  background: $danger;
+  color: $white-6;
+
   text-align: center;
   border: none;
   padding: 0.5em 1em;
   display: inline-block;
   font-size: 16px;
+
   font-weight: bold;
   border-radius: 6px;
   cursor: pointer;
@@ -71,5 +77,7 @@ import Button from './components/button'
   background-color: $white-6;
   border: 3px solid rgb(183, 112, 183);
   cursor: not-allowed;
+
+  border-radius: 6px;
 }
 </style>
