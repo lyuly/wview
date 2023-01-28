@@ -1,10 +1,39 @@
 @import './basic';
-
+//主题色：蓝色
 $primary: $blue;
+$primary-light-3: #79BBFF;
+$primary-light-5: #9FCEFF;
+$primary-light-7: #C6E2FF;
+$primary-light-9: #ECF5FF;
+
 $secondary: $gray-7;
+
 $success: $green;
-$info: $cyan;
+$success-light-3: #95D475;
+$success-light-5: #B3E09C;
+$success-light-7: #D1EDC4;
+$success-light-9: #F0F9EB;
+
+
+$info: #909399;
+$info-light-3: #B1B3B8;
+$info-light-5: #C7C9CC;
+$info-light-7: #DEDFE0;
+$info-light-9: #F4F4F5;
+
+
 $warning: $yellow;
+$warning-light-3: #EEBE77;
+$warning-light-5: #F2D09D;
+$warning-light-7: #F8E3C5;
+$warning-light-9: #FCF6EC;
+
 $danger: $red;
+$danger-light-3: #F89898;
+$danger-light-5: #FAB5B5;
+$danger-light-7: #FCD3D3;
+$danger-light-9: #FEF0F0;
+
+
 $light: $white-1;
 $dark: $gray-4;
