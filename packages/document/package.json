@@ -12,6 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "unplugin-vue-define-options": "0",
     "vitepress": "1.0.0-alpha.36",
     "vue": "^3.2.45"
   },

@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
-cache
+**/cache
 build
 dist
 dist-ssr
