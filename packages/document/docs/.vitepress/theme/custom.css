@@ -1,0 +1,18 @@
+:root {
+  --vp-c-blue-light: #1772b4;
+}
+
+:root {
+  --vp-c-brand: var(--vp-c-blue-light);
+  --vp-c-brand-lighter: var(--vp-c-blue-light);
+}
+
+:root {
+  --vp-home-hero-name-color: var(--vp-c-brand);
+}
+
+/* button */
+:root {
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-border: var(--vp-c-brand-lighter);
+}
