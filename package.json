@@ -14,8 +14,7 @@
   "lint-staged": {
     "packages/**/*.{js,ts,vue,jsx,tsx}": [
       "prettier --write",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "devDependencies": {
