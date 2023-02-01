@@ -68,7 +68,7 @@ export default defineConfig({
       'meta',
       { name: 'keywords', content: 'components, vue, headless-ui, variantjs, datatables, tailwind' }
     ],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/symbol-gradient.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/symbol.svg' }],
     ['meta', { name: 'HandheldFriendly', content: 'True' }],
     ['meta', { name: 'MobileOptimized', content: '320' }],
     ['meta', { name: '_old_theme-color', content: '#d8b4fe' }],

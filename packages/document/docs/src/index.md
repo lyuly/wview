@@ -9,7 +9,7 @@ hero:
     text: Build faster and better
     tagline: A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS.
     image:
-      src: /symbol-gradient.svg
+      src: /symbol.svg
       alt: Wview Components
     actions:
       - theme: brand
