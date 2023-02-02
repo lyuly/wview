@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "dev": "pnpm -C packages/wview-components dev",
+    "build": "pnpm -C packages/wview-components build",
+    "docs:dev": "pnpm -C packages/document dev",
+    "docs:build": "pnpm -C packages/document build",
+    "docs:preview": "pnpm -C packages/document preview",
     "test": "jest --coverage",
-    "preview": "vite preview",
+    "preview": "pnpm -C packages/wview-components preview",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
