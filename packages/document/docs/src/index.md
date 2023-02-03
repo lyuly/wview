@@ -1,25 +1,25 @@
 ---
 layout: home
 
-title: Wview Components
-titleTemplate: A lightweight, flexible & customizable UI library for Vue 3.
+title: Wview组件库
+titleTemplate: 轻量，灵活，可定制化的Vue3组件库
 
 hero:
     name: Wview Components
-    text: Build faster and better
-    tagline: A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS.
+    text: 更快更好的编译
+    tagline: 轻量，灵活，可定制化，采用中国色的Vue3组件库
     image:
       src: /symbol.svg
       alt: Wview Components
     actions:
       - theme: brand
-        text: start
+        text: 开始
         link: /guide/quick-start
       - theme: alt
-        text: why Wview?
+        text: 为什么？
         link: /guide/introduction
       - theme: alt
-        text: View on GitHub
+        text: 在GitHub上查看
         link: https://github.com/lyuly/wview
 
 features:
