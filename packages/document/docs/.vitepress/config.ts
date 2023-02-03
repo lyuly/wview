@@ -2,6 +2,16 @@ import { resolve } from 'path'
 import { defineConfig } from 'vitepress'
 import MarkitDownInclude from 'markdown-it-include'
 import DefineOptions from 'unplugin-vue-define-options/vite'
+import { SearchPlugin } from 'vitepress-plugin-search'
+import flexSearchIndexOptions from 'flexsearch'
+
+var options = {
+  ...flexSearchIndexOptions,
+  previewLength: 50,
+  buttonLabel: '搜索',
+  placeholder: '搜索文档',
+  wildcard: false
+}
 
 const production = process.env.NODE_ENV === 'production'
 const site = production ? 'https://vanilla-components.com' : 'http://localhost:5173'
@@ -9,11 +19,11 @@ const title = 'Wview Components'
 const description = 'A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS'
 
 const navQuickStart = [
-  { text: 'Introduction', link: '/guide/introduction' },
-  { text: 'Installation', link: '/guide/quick-start' },
-  { text: 'Configuration', link: '/guide/configuration' },
-  { text: 'Variants & Usage', link: '/guide/variants' },
-  { text: 'Shared Props', link: '/guide/props' }
+  { text: '介绍', link: '/guide/introduction' },
+  { text: '安装', link: '/guide/quick-start' },
+  { text: '配置', link: '/guide/configuration' },
+  { text: '用法', link: '/guide/variants' },
+  { text: '共享', link: '/guide/props' }
 ]
 
 export default defineConfig({
@@ -44,7 +54,7 @@ export default defineConfig({
     json: {
       stringify: true
     },
-    plugins: [DefineOptions()],
+    plugins: [DefineOptions(), SearchPlugin(options)],
     build: {
       sourcemap: false,
       chunkSizeWarningLimit: 16000
@@ -57,13 +67,12 @@ export default defineConfig({
   // vitepress配置
   srcDir: './src',
   base: '/',
-  title: 'Wview Components',
-  description: 'A Lightweight, flexible & customizable UI library for Vue3',
+  title: 'Wview组件库',
+  description: '轻量，灵活，定制化的Vue3组件库',
   head: [
     ['meta', { name: 'author', content: '什么队' }],
     ['meta', { name: '关键字', content: '组件, vue' }],
     ['meta', { rel: 'icon', type: 'image/svg+xml' }],
-    ['meta', { name: 'author', content: 'Flavorly' }],
     [
       'meta',
       { name: 'keywords', content: 'components, vue, headless-ui, variantjs, datatables, tailwind' }
@@ -101,7 +110,7 @@ export default defineConfig({
         link: '/guide/quick-start',
         activeMatch: '/guide/quick-start'
       },
-      { text: 'Components', link: '/guide/components-list', activeMatch: '/guide/components-list' },
+      { text: '组件', link: '/guide/components-list', activeMatch: '/guide/components-list' },
       { text: 'v0.0.0', link: 'https://github.com/lyuly/wview' }
     ]
   }
