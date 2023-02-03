@@ -1,3 +1,5 @@
+[English](./README_US.md) | [中文](./README_CN.md)
+
 ## Getting Started
 
 ## Breaking change list
