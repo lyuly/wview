@@ -8,12 +8,9 @@
 
 ### 克隆仓库
 
-```shell
+```bash
 cd wview
 
 pnpm i
-
-cd wview/package/wview-components
-
-pnpm dev
+pnpm dev:docs
 ```
