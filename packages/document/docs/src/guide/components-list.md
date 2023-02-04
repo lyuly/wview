@@ -1,4 +1,4 @@
-[button](http://google.com)
+[button](./components/button.md)
 
 [icon](http://google.com)
 

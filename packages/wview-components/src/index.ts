@@ -1,1 +1,1 @@
-export { default as Button, default as WviewButton } from './components/button'
+export { default as Button, default as WButton } from './components/button'
