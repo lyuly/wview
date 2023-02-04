@@ -14,7 +14,7 @@ var options = {
 }
 
 const production = process.env.NODE_ENV === 'production'
-const site = production ? 'https://vanilla-components.com' : 'http://localhost:5173'
+const site = production ? 'https://wview-wiki.vercel.app' : 'http://localhost:3000'
 const title = 'Wview Components'
 const description = 'A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS'
 
@@ -36,7 +36,7 @@ export default defineConfig({
   vite: {
     optimizeDeps: {
       exclude: [],
-      include: ['@wview-components'],
+      include: ['wview-components'],
       force: true
     },
     server: {
@@ -48,7 +48,7 @@ export default defineConfig({
     resolve: {
       alias: [
         { find: '@wview', replacement: resolve(__dirname, '../../../wview-components') },
-        { find: '@', replacement: resolve(__dirname, '../../../wview-components/src') }
+        { find: '@', replacement: resolve(__dirname, '../src') }
       ]
     },
     json: {
@@ -112,6 +112,21 @@ export default defineConfig({
       },
       { text: '组件', link: '/guide/components-list', activeMatch: '/guide/components-list' },
       { text: 'v0.0.0', link: 'https://github.com/lyuly/wview' }
-    ]
+    ],
+
+    sidebar: {
+      '/': [
+        {
+          text: '开始',
+          collapsible: true,
+          items: navQuickStart
+        },
+        {
+          text: '组件',
+          collapsible: true,
+          items: [{ text: 'Button', link: '/guide/components/button' }]
+        }
+      ]
+    }
   }
 })

@@ -1,10 +1,9 @@
-import type { App, Plugin } from 'vue'
+import type { App } from 'vue'
 
-import Button from './button.tsx'
+import wButton from './wButton.vue'
 
-Button.install = function (app: App) {
-  app.component(Button.name, Button)
-  return app
+wButton.install = (app: App) => {
+  app.component(wButton.name, wButton)
 }
 
-export default Button as typeof Button & Plugin & {}
+export default wButton
