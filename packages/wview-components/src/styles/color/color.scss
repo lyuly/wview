@@ -2,11 +2,67 @@
 
 $prefix: w;
 
+// 功能色
+// 品牌色
 $primary: $blue;
+$primary-light-3: #79BBFF;
+$primary-light-5: #9FCEFF;
+$primary-light-7: #C6E2FF;
+$primary-light-9: #ECF5FF;
+
+// 第二品牌色
 $secondary: $gray-7;
+
+// 成功色
 $success: $green;
-$info: $cyan;
+$success-light-3: #95D475;
+$success-light-5: #B3E09C;
+$success-light-7: #D1EDC4;
+$success-light-9: #F0F9EB;
+
+// 信息色
+$info: #909399;
+$info-light-3: #B1B3B8;
+$info-light-5: #C7C9CC;
+$info-light-7: #DEDFE0;
+$info-light-9: #F4F4F5;
+
+// 警告色
 $warning: $yellow;
+$warning-light-3: #EEBE77;
+$warning-light-5: #F2D09D;
+$warning-light-7: #F8E3C5;
+$warning-light-9: #FCF6EC;
+
+// 危险色
 $danger: $red;
-$light: $white-1;
-$dark: $gray-4;
+$danger-light-3: #F89898;
+$danger-light-5: #FAB5B5;
+$danger-light-7: #FCD3D3;
+$danger-light-9: #FEF0F0;
+
+
+// 文本色彩
+$text-color-primary: #303133;//一般文本
+$text-color-regular: #606266;
+$text-color-secondary: #909399;
+$text-color-placeholder: #A8ABB2;
+$text-color-disable: #C0C4CC;
+
+// 填充色彩
+$fill-color-darker: #E6E8EB;
+$fill-color-dark: #EBEDF0;
+$fill-color: #F0F2F5;
+$fill-color-light: #F5F7FA;
+$fill-color-lighter: #FAFAFA;
+$fill-color-extra-light: #FFFFFF;
+$fill-color-blank: #FFFFFF;
+
+// 边框色彩
+$border-color-darker: #CDD0D6;
+$border-color-dark: #D4D7DE;
+$border-color: #DCDFE6;
+$border-color-light: #E4E7ED;
+$border-color-lighter: #EBEEF5;
+$border-color-extra-light: #F2F6FC;
+
