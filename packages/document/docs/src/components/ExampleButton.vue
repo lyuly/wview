@@ -1,25 +1,25 @@
-<script setup lang="ts">
-import { Button } from 'wview-components'
+<script lang="ts" setup>
+import { WButton } from 'wview-components'
 </script>
 
 <template>
   <div>
-    <Button type="primary">默 认</Button>
-    <Button type="success">成 功</Button>
-    <Button type="info">通 知</Button>
-    <Button type="warning">警 告</Button>
-    <Button type="danger">危 险</Button>
-    <Button type="text">文 本</Button>
+    <WButton type="primary">默 认</WButton>
+    <WButton type="success">成 功</WButton>
+    <WButton type="info">通 知</WButton>
+    <WButton type="warning">警 告</WButton>
+    <WButton type="danger">危 险</WButton>
+    <WButton type="text">文 本</WButton>
   </div>
 
   <div>
-    <Button type="primary" size="mini">最小</Button>
-    <Button type="success" size="small">小</Button>
-    <Button type="info" size="medium">大</Button>
+    <WButton type="primary" size="mini">最小</WButton>
+    <WButton type="success" size="small">小</WButton>
+    <WButton type="info" size="medium">大</WButton>
   </div>
 
   <div>
-    <Button type="primary" :plain="true">朴素</Button>
-    <Button type="primary" :disabled="true">禁用</Button>
+    <WButton type="primary" :plain="true">朴素</WButton>
+    <WButton type="primary" :disabled="true">禁用</WButton>
   </div>
 </template>

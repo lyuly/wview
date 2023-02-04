@@ -14,7 +14,7 @@ var options = {
 }
 
 const production = process.env.NODE_ENV === 'production'
-const site = production ? 'https://vanilla-components.com' : 'http://localhost:5173'
+const site = production ? 'https://wview-wiki.vercel.app' : 'http://localhost:3000'
 const title = 'Wview Components'
 const description = 'A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS'
 

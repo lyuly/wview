@@ -4,11 +4,13 @@ outline: deep
 
 # Button
 
-<script setup>
-import ExampleButton from '@/components/ExampleButton.vue'  
+<script lang="ts" setup>
+import ExampleButton from '@/components/ExampleButton.vue'
 </script>
 
-<ExampleButton />
+<ClientOnly>
+  <ExampleButton />
+</ClientOnly>
 
 :::details 展开代码
 <<< @/components/ExampleButton.vue
