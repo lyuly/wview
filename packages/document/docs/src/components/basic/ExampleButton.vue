@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { wButton } from 'wview-components'
+import { wButton } from 'wview'
 </script>
 
 <template>

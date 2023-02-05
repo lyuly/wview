@@ -2,21 +2,11 @@ import { resolve } from 'path'
 import { defineConfig } from 'vitepress'
 import MarkitDownInclude from 'markdown-it-include'
 import DefineOptions from 'unplugin-vue-define-options/vite'
-import { SearchPlugin } from 'vitepress-plugin-search'
-import flexSearchIndexOptions from 'flexsearch'
-
-var options = {
-  ...flexSearchIndexOptions,
-  previewLength: 50,
-  buttonLabel: '搜索',
-  placeholder: '搜索文档',
-  wildcard: false
-}
 
 const production = process.env.NODE_ENV === 'production'
 const site = production ? 'https://wview-wiki.vercel.app' : 'http://localhost:3000'
-const title = 'Wview Components'
-const description = 'A lightweight, flexible & customizable UI library for Vue 3, styled with SCSS'
+const title = 'Wview组件库'
+const description = '轻量，灵活，可定制化，采用中国色的Vue3组件库'
 
 const navQuickStart = [
   { text: '介绍', link: '/guide/introduction' },
@@ -36,7 +26,7 @@ export default defineConfig({
   vite: {
     optimizeDeps: {
       exclude: [],
-      include: ['wview-components'],
+      include: ['wview'],
       force: true
     },
     server: {
@@ -54,13 +44,13 @@ export default defineConfig({
     json: {
       stringify: true
     },
-    plugins: [DefineOptions(), SearchPlugin(options)],
+    plugins: [DefineOptions()],
     build: {
       sourcemap: false,
       chunkSizeWarningLimit: 16000
     },
     ssr: {
-      noExternal: ['wview-components']
+      noExternal: ['wview']
     }
   },
 
@@ -80,14 +70,13 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/symbol.svg' }],
     ['meta', { name: 'HandheldFriendly', content: 'True' }],
     ['meta', { name: 'MobileOptimized', content: '320' }],
-    ['meta', { name: '_old_theme-color', content: '#d8b4fe' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:site', content: site }],
     ['meta', { name: 'twitter:title', value: title }],
     ['meta', { name: 'twitter:description', value: description }],
     ['meta', { name: 'twitter:image', content: '/seo.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:locale', content: 'en_US' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:site', content: site }],
     ['meta', { property: 'og:site_name', content: title }],
     ['meta', { property: 'og:title', content: title }],
@@ -105,6 +94,11 @@ export default defineConfig({
   },
 
   themeConfig: {
+    algolia: {
+      appId: 'BZIG6JY2ID',
+      apiKey: '08d0ca849bf58461247e96ae39c2d06c',
+      indexName: 'wview'
+    },
     nav: [
       { text: '概览', items: navQuickStart },
       {
@@ -126,12 +120,12 @@ export default defineConfig({
         {
           text: '基础组件',
           collapsible: true,
-          items: [{ text: 'Button', link: '/guide/components/basic/button' }]
+          items: [{ text: 'Button 按钮', link: '/guide/components/basic/button' }]
         },
         {
           text: 'From 表单组件',
           collapsible: true,
-          items: [{ text: 'From', link: '/guide/components/form/form' }]
+          items: [{ text: 'From 表单', link: '/guide/components/form/form' }]
         }
       ]
     }
