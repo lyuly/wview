@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "markdown-it-include": "^2.0.0",
-    "wview-components": "workspace:^0.0.0"
+    "wview-components": "workspace:^1.0.0"
   }
 }

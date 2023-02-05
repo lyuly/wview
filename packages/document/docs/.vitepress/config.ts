@@ -20,9 +20,9 @@ const description = 'A lightweight, flexible & customizable UI library for Vue 3
 
 const navQuickStart = [
   { text: '介绍', link: '/guide/introduction' },
-  { text: '安装', link: '/guide/quick-start' },
+  { text: '安装', link: '/guide/install' },
   { text: '配置', link: '/guide/configuration' },
-  { text: '用法', link: '/guide/variants' },
+  { text: '快速开始', link: '/guide/quick-start' },
   { text: '共享', link: '/guide/props' }
 ]
 
@@ -99,7 +99,9 @@ export default defineConfig({
   markdown: {
     config(md) {
       md.use(MarkitDownInclude)
-    }
+    },
+    // 行号
+    lineNumbers: true
   },
 
   themeConfig: {
@@ -122,9 +124,14 @@ export default defineConfig({
           items: navQuickStart
         },
         {
-          text: '组件',
+          text: '基础组件',
           collapsible: true,
-          items: [{ text: 'Button', link: '/guide/components/button' }]
+          items: [{ text: 'Button', link: '/guide/components/basic/button' }]
+        },
+        {
+          text: 'From 表单组件',
+          collapsible: true,
+          items: [{ text: 'From', link: '/guide/components/form/form' }]
         }
       ]
     }
