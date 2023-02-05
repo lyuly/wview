@@ -1,6 +1,6 @@
 {
-  "name": "wview-components",
-  "version": "1.0.0",
+  "name": "wview",
+  "version": "0.0.1",
   "types": "./dist/index.d.ts",
   "type": "module",
   "main": "./dist/wview-components.umd.js",
