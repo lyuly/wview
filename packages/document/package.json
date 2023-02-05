@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "dev": "vitepress dev docs --port 3000",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --port 3001"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "unplugin-vue-define-options": "0",
     "vitepress": "1.0.0-alpha.36",
+    "vitepress-plugin-search": "1.0.4-alpha.19",
     "vue": "^3.2.45"
   },
   "dependencies": {

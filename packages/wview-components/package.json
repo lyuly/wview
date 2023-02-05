@@ -10,6 +10,10 @@
     ".": {
       "import": "./dist/wview-components.es.js",
       "require": "./dist/wview-components.umd.js"
+    },
+    "./dist/styles.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {
