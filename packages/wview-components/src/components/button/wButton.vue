@@ -2,12 +2,12 @@
 import './style/index.scss'
 import { defineComponent, computed, useSlots } from 'vue'
 import { buttonProps } from './types'
-import IconSystem from '../icons'
+// import IconSystem from '../icons'
 
 export default defineComponent({
   name: 'w-button',
   props: buttonProps,
-  components: { IconSystem },
+  // components: { IconSystem },
   setup (props) {
     const styleClass = computed(() => {
       return {
@@ -19,21 +19,21 @@ export default defineComponent({
       }
     })
 
-    const iconFont = computed(() => {
-      const iconName = props.icon
-      const position = props.iconPosition
-      return {
-        iconName,
-        position
-      }
-    })
+    // const iconFont = computed(() => {
+    //   // const iconName = props.icon
+    //   const position = props.iconPosition
+    //   return {
+    //     // iconName,
+    //     position
+    //   }
+    // })
 
     const slots = useSlots()
 
     return {
       styleClass,
-      IconSystem,
-      iconFont,
+      // IconSystem,
+      // iconFont,
       slots
     }
   }
@@ -43,17 +43,17 @@ export default defineComponent({
 <template>
   <div>
     <button class="w-button" :class="styleClass">
-      <IconSystem
+      <!-- <IconSystem
         v-if="iconFont.iconName && iconFont.position !== 'right'"
         :name="iconFont.iconName"
-      />
+      /> -->
       <span class="w-button-text" v-if="slots.default">
         <slot />
       </span>
-      <IconSystem
+      <!-- <IconSystem
         v-if="iconFont.position === 'right' && iconFont.iconName"
         :name="iconFont.iconName"
-      />
+      /> -->
     </button>
   </div>
 </template>
