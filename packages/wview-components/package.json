@@ -1,9 +1,8 @@
 {
   "name": "wview-components",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
+  "version": "1.0.0",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "main": "./dist/wview-components.umd.js",
   "module": "./dist/wview-components.es.js",
   "exports": {
@@ -16,6 +15,10 @@
       "require": "./dist/style.css"
     }
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
