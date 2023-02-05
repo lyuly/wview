@@ -3,6 +3,13 @@
 
 ## Getting Started
 
+```shell
+# /wview
+pnpm build
+
+pnpm dev
+```
+
 ## Breaking change list
 
 ## Migration Tool
