@@ -7,7 +7,6 @@
 </template>
 
 <script lang="ts">
-import './font/iconfont-arrow.js'
 import './style/index.scss'
 import { defineComponent, computed } from 'vue'
 import { iconProps } from './types/type'
