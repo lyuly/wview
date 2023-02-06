@@ -1,4 +1,5 @@
 :root {
+  --vp-c-white-mute: #fff;
   --vp-c-blue-light: #1772b4;
 }
 
@@ -15,4 +16,6 @@
 :root {
   --vp-button-brand-bg: var(--vp-c-brand);
   --vp-button-brand-border: var(--vp-c-brand-lighter);
+  --vp-button-brand-hover-border: #5698c3;
+  --vp-button-brand-hover-bg: #5698c3;
 }

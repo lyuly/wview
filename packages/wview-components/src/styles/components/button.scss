@@ -1,0 +1,307 @@
+.#{$prefix}-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $white;
+  border: 1px solid $border-color-light;
+  color: $text-color-regular;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-weight: $text-font-weight;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+
+  .#{$prefix}-button--text {
+    display: inline-block;
+    margin: 0 4px;
+
+    &.hover {
+      color: $primary;
+      border-color: $border-color-lighter;
+      background-color: $border-color-lighter;
+    }
+  }
+}
+
+.#{$prefix}-button.isDisabled {
+  color: $secondary;
+  cursor: not-allowed;
+  background-image: none;
+  background-color: $white;
+  border-color: $border-color-lighter;
+}
+
+.#{$prefix}-button--default {
+  color: $text-color-regular;
+  background-color: $white;
+  border-color: $border-color-lighter;
+
+  &:hover {
+    border-color: $primary-light-9;
+    background: $white;
+    color: $primary-light-3;
+  }
+}
+
+.#{$prefix}-button--default.isPlain {
+  color: $text-color-regular;
+  background-color: $white;
+  border-color: $border-color-lighter;
+
+  &:hover {
+    color: $primary-light-3;
+    border-color: $primary-light-3;
+  }
+}
+
+.#{$prefix}-button--default.isDisabled,
+.#{$prefix}-button--default.isDisabled:active,
+.#{$prefix}-button--default.isDisabled:focus,
+.#{$prefix}-button--default.isDisabled:hover {
+  color: $text-color-placeholder;
+  background-color: $white;
+  border-color: $border-color-light;
+}
+
+.#{$prefix}-button--default.isDisabled.isPlained,
+.#{$prefix}-button--default.isDisabled.isPlained:active,
+.#{$prefix}-button--default.isDisabled.isPlained:focus,
+.#{$prefix}-button--default.isDisabled.isPlained:hover {
+  color: $text-color-placeholder;
+  background-color: $white;
+  border-color: $border-color-light;
+}
+
+.#{$prefix}-button--primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $border-color-lighter;
+
+  &:hover {
+    background: $primary-light-3;
+    border-color: $primary-light-3;
+    color: $white;
+  }
+}
+
+.#{$prefix}-button--primary.isPlain {
+  color: $blue;
+  background-color: $white;
+  border-color: $blue;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
+.#{$prefix}-button--primary.isDisabled,
+.#{$prefix}-button--primary.isDisabled:active,
+.#{$prefix}-button--primary.isDisabled:focus,
+.#{$prefix}-button--primary.isDisabled:hover {
+  color: $white;
+  background-color: $primary-light-3;
+  border-color: $primary-light-5;
+}
+
+.#{$prefix}-button--primary.isDisabled.isPlain,
+.#{$prefix}-button--primary.isDisabled.isPlain:active,
+.#{$prefix}-button--primary.isDisabled.isPlain:focus,
+.#{$prefix}-button--primary.isDisabled.isPlain:hover {
+  color: $primary-light-3;
+  background-color: $primary-light-9;
+  border-color: #79BBFF;
+}
+
+.#{$prefix}-button--success {
+  color: $white;
+  background-color: $success;
+  border-color: $success;
+
+  &:hover {
+    background: $success-light-3;
+    border-color: $success-light-3;
+    color: $white;
+  }
+}
+
+.#{$prefix}-button--success.isPlain {
+  color: $success;
+  background: $white;
+  border-color: $success;
+
+  &:hover {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+  }
+}
+
+.#{$prefix}-button--success.isDisabled,
+.#{$prefix}-button--success.isDisabled:active,
+.#{$prefix}-button--success.isDisabled:focus,
+.#{$prefix}-button--success.isDisabled:hover {
+  color: $white;
+  background-color: $success-light-5;
+  border-color: $success-light-5;
+}
+
+.#{$prefix}-button--success.isDisabled.isPlain,
+.#{$prefix}-button--success.isDisabled.isPlain:active,
+.#{$prefix}-button--success.isDisabled.isPlain:focus,
+.#{$prefix}-button--success.isDisabled.isPlain:hover {
+  color: $success-light-5;
+  background-color: $success-light-9;
+  border-color: $success-light-5;
+}
+
+.#{$prefix}-button--info {
+  color: $white;
+  background-color: $info;
+  border-color: $info;
+
+  &:hover {
+    background-color: $info-light-3;
+    border-color: $info-light-3;
+  }
+}
+
+.#{$prefix}-button--info.isPlain {
+  color: $info;
+  background: $white;
+  border-color: $info;
+
+  &:hover {
+    color: $white;
+    background-color: $info;
+    border-color: $info;
+  }
+}
+
+.#{$prefix}-button--info.isDisabled,
+.#{$prefix}-button--info.isDisabled:active,
+.#{$prefix}-button--info.isDisabled:focus,
+.#{$prefix}-button--info.isDisabled:hover {
+  color: $white;
+  background-color: $info-light-5;
+  border-color: $info-light-5;
+}
+
+.#{$prefix}-button--info.isDisabled.isPlain,
+.#{$prefix}-button--info.isDisabled.isPlain:active,
+.#{$prefix}-button--info.isDisabled.isPlain:focus,
+.#{$prefix}-button--info.isDisabled.isPlain:hover {
+  color: $info-light-5;
+  background-color: $info-light-9;
+  border-color: $info-light-5;
+}
+
+.#{$prefix}-button--danger {
+  color: $white;
+  background-color: $danger;
+  border-color: $danger;
+
+  &:hover {
+    background-color: $danger-light-3;
+    border-color: $danger-light-3;
+  }
+}
+
+.#{$prefix}-button--danger.isPlain {
+  color: $danger;
+  background: $white;
+  border-color: $danger;
+
+  &:hover {
+    color: $white;
+    background-color: $danger;
+    border-color: $danger;
+  }
+}
+
+.#{$prefix}-button--danger.isDisabled,
+.#{$prefix}-button--danger.isDisabled:active,
+.#{$prefix}-button--danger.isDisabled:focus,
+.#{$prefix}-button--danger.isDisabled:hover {
+  color: $white;
+  background-color: $danger-light-5;
+  border-color: $danger-light-5;
+}
+
+.#{$prefix}-button--danger.isDisabled.isPlain,
+.#{$prefix}-button--danger.isDisabled.isPlain:active,
+.#{$prefix}-button--danger.isDisabled.isPlain:hover {
+  color: $danger-light-5;
+  background-color: $danger-light-9;
+  border-color: $danger-light-5;
+}
+
+.#{$prefix}-button--warning {
+  color: $white;
+  background-color: $warning;
+  border-color: $warning;
+
+  &:hover {
+    background-color: $warning-light-3;
+    border-color: $warning-light-3;
+  }
+}
+
+.#{$prefix}-button--warning.isPlain {
+  color: $warning;
+  background: $white;
+  border-color: $warning;
+
+  &:hover {
+    color: $white;
+    background-color: $warning;
+    border-color: $warning;
+  }
+}
+
+.#{$prefix}-button--warning.isDisabled,
+.#{$prefix}-button--warning.isDisabled:active,
+.#{$prefix}-button--warning.isDisabled:focus,
+.#{$prefix}-button--warning.isDisabled:hover {
+  color: $white;
+  background-color: $warning-light-5;
+  border-color: $warning-light-5;
+}
+
+.#{$prefix}-button--warning.isDisabled.isPlain,
+.#{$prefix}-button--warning.isDisabled.isPlain:active,
+.#{$prefix}-button--warning.isDisabled.isPlain:hover {
+  color: $warning-light-5;
+  background-color: $warning-light-9;
+  border-color: $warning-light-5;
+}
+
+.#{$prefix}-button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.#{$prefix}-button--small {
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.#{$prefix}-button--mini {
+  padding: 6px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.isRound {
+  border-radius: 20px;
+}
