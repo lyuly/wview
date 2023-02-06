@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import './font/iconfont-system.js'
+// import './font/iconfont-system.js'
 import './style/index.scss'
 import { defineComponent, computed } from 'vue'
 import { iconProps } from './types/type'
