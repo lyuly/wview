@@ -38,9 +38,9 @@ import { wButton } from 'wview'
   box-sizing: border-box;
 
   position: relative;
-  border: 1px solid #dcdfe6;
+  border: 1px solid var(--vp-c-divider);
   border-radius: 4px;
-  background: #ffffff;
+  background-color: var(--vp-c-bg-mute);
 
   .btn {
     display: flex;
