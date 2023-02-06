@@ -59,6 +59,7 @@ export default defineConfig({
   base: '/',
   title: 'Wview组件库',
   description: '轻量，灵活，定制化的Vue3组件库',
+  lastUpdated: true,
   head: [
     ['meta', { name: 'author', content: '什么队' }],
     ['meta', { name: '关键字', content: '组件, vue' }],
