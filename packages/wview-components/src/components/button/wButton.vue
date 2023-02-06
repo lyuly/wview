@@ -1,5 +1,5 @@
 <script lang="ts">
-import './style/index.scss'
+import '@/styles/components/button.scss'
 import { defineComponent, computed, useSlots } from 'vue'
 import { buttonProps } from './types'
 // import IconSystem from '../icons'

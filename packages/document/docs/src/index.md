@@ -5,12 +5,12 @@ title: Wview组件库
 titleTemplate: 轻量，灵活，可定制化的Vue3组件库
 
 hero:
-    name: Wview Components
+    name: Wview组件库
     text: 更快更好的编译
     tagline: 轻量，灵活，可定制化，采用中国色的Vue3组件库
     image:
       src: /symbol.svg
-      alt: Wview Components
+      alt: Wview组件库
     actions:
       - theme: brand
         text: 开始
@@ -23,22 +23,22 @@ hero:
         link: https://github.com/lyuly/wview
 
 features:
-  - icon: 📚
-    title: DX Focused
-    details: Write less code & build faster with pre-made components ready-to-go!
+  - icon: 🚀
+    title: 专注效率
+    details: 更少代码，编译更快
   - icon: 🛠
-    title: Totally Configurable
-    details: Full customize your CSS Classes, Props & Multiple variants for the same component.
+    title: 完全配置
+    details: 自定义CSS
   - icon: 🎨
-    title: China Color
-    details: Presets included by default for SCSS, choose color from ChinaColor
-  - icon: ✋
-    title: 20+ Components
-    details: Currently providing 20+ Pixel perfect components ready to use!
-  - icon: 🌳
-    title: Tree Shakable
-    details: Import only the components that you need without worry about your bundle size.
-  - icon: 🔋
-    title: Many more nice features!
-    details: Written in Typescript + Vue 3, SSR ready, Typescript Types, 10+ Components & many more...
+    title: 中国色
+    details: 采用中科院中国色，更符合国人视觉美
+  - icon: 🎗
+    title: 20+组件
+    details: 预计提供20+完美组件
+  - icon: 🎄
+    title: Tree-shaking
+    details: 只需导入你需要的组件，无需担心大小
+  - icon: 🎉
+    title: 许多特色
+    details: Typescript、Vite、Vue3...
 ---
