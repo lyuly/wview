@@ -1,14 +1,12 @@
 .#{$prefix}-button {
-  display: inline-flex;
-  line-height: 22px;
+  display: inline-block;
+  line-height: 1;
   white-space: nowrap;
   cursor: pointer;
   background: $white;
   border: 1px solid $border-color-light;
   color: $text-color-regular;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: -0.01px;
+  text-align: center;
   box-sizing: border-box;
   outline: none;
   margin: 0;
@@ -16,12 +14,12 @@
   font-family: 'PingFang SC';
   font-style: normal;
   font-weight: $text-font-weight;
-  padding: 5px 16px;
+  padding: 12px 20px;
   font-size: 14px;
   border-radius: 4px;
 
   .#{$prefix}-button--text {
-    display: inline-flex;
+    display: inline-block;
     margin: 0 4px;
 
     &.hover {
@@ -38,6 +36,47 @@
   background-image: none;
   background-color: $white;
   border-color: $border-color-lighter;
+}
+
+.#{$prefix}-button--default {
+  color: $text-color-regular;
+  background-color: $white;
+  border-color: $border-color-lighter;
+
+  &:hover {
+    border-color: $primary-light-9;
+    background: $white;
+    color: $primary-light-3;
+  }
+}
+
+.#{$prefix}-button--default.isPlain {
+  color: $text-color-regular;
+  background-color: $white;
+  border-color: $border-color-lighter;
+
+  &:hover {
+    color: $primary-light-3;
+    border-color: $primary-light-3;
+  }
+}
+
+.#{$prefix}-button--default.isDisabled,
+.#{$prefix}-button--default.isDisabled:active,
+.#{$prefix}-button--default.isDisabled:focus,
+.#{$prefix}-button--default.isDisabled:hover {
+  color: $text-color-placeholder;
+  background-color: $white;
+  border-color: $border-color-light;
+}
+
+.#{$prefix}-button--default.isDisabled.isPlained,
+.#{$prefix}-button--default.isDisabled.isPlained:active,
+.#{$prefix}-button--default.isDisabled.isPlained:focus,
+.#{$prefix}-button--default.isDisabled.isPlained:hover {
+  color: $text-color-placeholder;
+  background-color: $white;
+  border-color: $border-color-light;
 }
 
 .#{$prefix}-button--primary {
@@ -69,54 +108,17 @@
 .#{$prefix}-button--primary.isDisabled:focus,
 .#{$prefix}-button--primary.isDisabled:hover {
   color: $white;
-  background-color: $primary-light-7;
-  border-color: $primary-light-7;
+  background-color: $primary-light-3;
+  border-color: $primary-light-5;
 }
 
 .#{$prefix}-button--primary.isDisabled.isPlain,
 .#{$prefix}-button--primary.isDisabled.isPlain:active,
 .#{$prefix}-button--primary.isDisabled.isPlain:focus,
 .#{$prefix}-button--primary.isDisabled.isPlain:hover {
-  color: $white;
+  color: $primary-light-3;
   background-color: $primary-light-9;
-  border-color: $primary-light-9;
-}
-
-.#{$prefix}-button--default {
-  color: $text-color-regular;
-  background-color: $white;
-  border-color: $border-color-lighter;
-
-  &:hover {
-    border-color: $primary-light-9;
-    background: $white;
-    color: $primary-light-3;
-  }
-}
-
-.#{$prefix}-button--default.isPlain {
-  color: $text-color-regular;
-  background-color: $white;
-  border-color: $border-color-lighter;
-
-  &:hover {
-    color: $primary-light-3;
-    border-color: $primary-light-3;
-  }
-}
-
-.#{$prefix}-button--default.isDisabled,
-.#{$prefix}-button--default.isDisabled:active,
-.#{$prefix}-button--default.isDisabled:focus,
-.#{$prefix}-button--default.isDisabled:hover {
-  color: $text-color-regular;
-}
-
-.#{$prefix}-button--default.isDisabled.isPlained,
-.#{$prefix}-button--default.isDisabled.isPlained:active,
-.#{$prefix}-button--default.isDisabled.isPlained:focus,
-.#{$prefix}-button--default.isDisabled.isPlained:hover {
-  color: $text-color-regular;
+  border-color: #79BBFF;
 }
 
 .#{$prefix}-button--success {
@@ -148,17 +150,17 @@
 .#{$prefix}-button--success.isDisabled:focus,
 .#{$prefix}-button--success.isDisabled:hover {
   color: $white;
-  background-color: $success-light-7;
-  border-color: $success-light-7;
+  background-color: $success-light-5;
+  border-color: $success-light-5;
 }
 
 .#{$prefix}-button--success.isDisabled.isPlain,
 .#{$prefix}-button--success.isDisabled.isPlain:active,
 .#{$prefix}-button--success.isDisabled.isPlain:focus,
 .#{$prefix}-button--success.isDisabled.isPlain:hover {
-  color: $white;
+  color: $success-light-5;
   background-color: $success-light-9;
-  border-color: $success-light-9;
+  border-color: $success-light-5;
 }
 
 .#{$prefix}-button--info {
@@ -189,17 +191,17 @@
 .#{$prefix}-button--info.isDisabled:focus,
 .#{$prefix}-button--info.isDisabled:hover {
   color: $white;
-  background-color: $info-light-7;
-  border-color: $info-light-7;
+  background-color: $info-light-5;
+  border-color: $info-light-5;
 }
 
 .#{$prefix}-button--info.isDisabled.isPlain,
 .#{$prefix}-button--info.isDisabled.isPlain:active,
 .#{$prefix}-button--info.isDisabled.isPlain:focus,
 .#{$prefix}-button--info.isDisabled.isPlain:hover {
-  color: $white;
+  color: $info-light-5;
   background-color: $info-light-9;
-  border-color: $info-light-9;
+  border-color: $info-light-5;
 }
 
 .#{$prefix}-button--danger {
@@ -230,16 +232,16 @@
 .#{$prefix}-button--danger.isDisabled:focus,
 .#{$prefix}-button--danger.isDisabled:hover {
   color: $white;
-  background-color: $danger-light-7;
-  border-color: $danger-light-7;
+  background-color: $danger-light-5;
+  border-color: $danger-light-5;
 }
 
 .#{$prefix}-button--danger.isDisabled.isPlain,
 .#{$prefix}-button--danger.isDisabled.isPlain:active,
 .#{$prefix}-button--danger.isDisabled.isPlain:hover {
-  color: $white;
+  color: $danger-light-5;
   background-color: $danger-light-9;
-  border-color: $danger-light-9;
+  border-color: $danger-light-5;
 }
 
 .#{$prefix}-button--warning {
@@ -270,16 +272,16 @@
 .#{$prefix}-button--warning.isDisabled:focus,
 .#{$prefix}-button--warning.isDisabled:hover {
   color: $white;
-  background-color: $warning-light-7;
-  border-color: $warning-light-7;
+  background-color: $warning-light-5;
+  border-color: $warning-light-5;
 }
 
 .#{$prefix}-button--warning.isDisabled.isPlain,
 .#{$prefix}-button--warning.isDisabled.isPlain:active,
 .#{$prefix}-button--warning.isDisabled.isPlain:hover {
-  color: $white;
+  color: $warning-light-5;
   background-color: $warning-light-9;
-  border-color: $warning-light-9;
+  border-color: $warning-light-5;
 }
 
 .#{$prefix}-button--medium {
@@ -301,5 +303,5 @@
 }
 
 .isRound {
-  border-radius: 16px;
+  border-radius: 20px;
 }
