@@ -11,7 +11,7 @@
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import wview from 'wview'
+import ElementPlus from 'wview'
 import 'wview/dist/index.css'
 import App from './App.vue'
 
