@@ -36,7 +36,6 @@ import { wButton } from 'wview'
 <style lang="scss" scoped>
 .box {
   box-sizing: border-box;
-
   position: relative;
   border: 1px solid var(--vp-c-divider);
   border-radius: 4px;

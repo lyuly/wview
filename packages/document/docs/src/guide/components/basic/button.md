@@ -36,3 +36,11 @@ import disabledButton from '@/components/basic/disabledButton.vue'
 :::details 展开代码
 <<< @/components/basic/disabledButton.vue
 :::
+
+## Button API
+
+### Button 属性
+
+|属性名| 说明| 类型 |默认值|
+|---|---|---|---|
+|type|类型|`enum`|——|
