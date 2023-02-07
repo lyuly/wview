@@ -11,8 +11,8 @@ outline: deep
 使用`type`、`plain`、`round`来定义按钮的样式。
 
 <script lang="ts" setup>
-import basicButton from '@/components/basic/basicButton.vue'
-import disabledButton from '@/components/basic/disabledButton.vue'
+import basicButton from '@/example/basic/basicButton.vue'
+import disabledButton from '@/example/basic/disabledButton.vue'
 </script>
 
 <ClientOnly>
@@ -20,7 +20,7 @@ import disabledButton from '@/components/basic/disabledButton.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/components/basic/basicButton.vue
+<<< @/example/basic/basicButton.vue
 :::
 
 ## 禁用状态
@@ -34,13 +34,5 @@ import disabledButton from '@/components/basic/disabledButton.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/components/basic/disabledButton.vue
+<<< @/example/basic/disabledButton.vue
 :::
-
-## Button API
-
-### Button 属性
-
-|属性名| 说明| 类型 |默认值|
-|---|---|---|---|
-|type|类型|`enum`|——|
