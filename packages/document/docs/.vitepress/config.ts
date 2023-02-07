@@ -121,12 +121,12 @@ export default defineConfig({
         {
           text: '基础组件',
           collapsible: true,
-          items: [{ text: 'Button 按钮', link: '/guide/components/basic/button' }]
+          items: [{ text: 'Button 按钮', link: '/components/button' }]
         },
         {
           text: 'From 表单组件',
           collapsible: true,
-          items: [{ text: 'From 表单', link: '/guide/components/form/form' }]
+          items: [{ text: 'From 表单', link: '/components/form/form' }]
         }
       ]
     }
