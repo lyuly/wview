@@ -121,7 +121,10 @@ export default defineConfig({
         {
           text: '基础组件',
           collapsible: true,
-          items: [{ text: 'Button 按钮', link: '/components/button' }]
+          items: [
+            { text: 'Button 按钮', link: '/components/basic/button' },
+            { text: 'Icon 图标', link: '/components/basic/icon' }
+          ]
         },
         {
           text: 'From 表单组件',
