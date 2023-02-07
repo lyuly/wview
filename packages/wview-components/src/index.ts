@@ -1,1 +1,4 @@
-export { default as wButton, default as Button } from './components/button'
+import wButton from './components/button'
+import wIcon from './components/icons'
+
+export { wButton, wIcon }
