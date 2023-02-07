@@ -13,6 +13,7 @@ outline: deep
 <script lang="ts" setup>
 import basicButton from '@/example/basic/basicButton.vue'
 import disabledButton from '@/example/basic/disabledButton.vue'
+import sizeButton from '@/example/basic/sizeButton.vue'
 </script>
 
 <ClientOnly>
@@ -36,4 +37,18 @@ import disabledButton from '@/example/basic/disabledButton.vue'
 :::details 展开代码
 
 <<< @/example/basic/disabledButton.vue
+:::
+
+## 调整尺寸
+
+出了默认的大小，按钮组件还提供了额外的尺寸可供选择，以便适配不同的场景。
+
+使用 `size` 属性额外配置尺寸，可使用 `large` 、`small` 和 `mini` 三种值。
+
+<ClientOnly>
+  <sizeButton />
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/sizeButton.vue
 :::
