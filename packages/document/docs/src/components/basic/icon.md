@@ -53,9 +53,6 @@ for (const [key, component] of Object.entries(wview)) {
 
 <script lang="ts" setup>
 import systemIcon from '@/example/basic/systemIcon.vue'
-// TODO：引入cdn链接
-// src="//at.alicdn.com/t/c/font_3879339_49sr9oev88q.js"
-// src="//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js"
 </script>
 
 <ClientOnly>
@@ -65,3 +62,7 @@ import systemIcon from '@/example/basic/systemIcon.vue'
 :::details 展开代码
 <<< @/example/basic/systemIcon.vue
 :::
+
+<!-- TODO：引入cdn链接 -->
+<!-- src="//at.alicdn.com/t/c/font_3879339_49sr9oev88q.js" -->
+<!-- src="//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js" -->
