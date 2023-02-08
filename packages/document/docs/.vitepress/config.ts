@@ -129,7 +129,10 @@ export default defineConfig({
         {
           text: 'From 表单组件',
           collapsible: true,
-          items: [{ text: 'From 表单', link: '/components/form/form' }]
+          items: [
+            { text: 'From 表单', link: '/components/form/form' },
+            { text: 'select 选择器UI', link: '/components/form/select' }
+          ]
         }
       ]
     }
