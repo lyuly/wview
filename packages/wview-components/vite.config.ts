@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import dts from 'vite-plugin-dts'
 import * as pkg from './package.json'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 
 const externals = [...Object.keys(pkg.dependencies || {}), ...Object.keys(pkg.dependencies || {})]
 
@@ -28,7 +29,8 @@ export default defineConfig({
           content
         }
       }
-    })
+    }),
+    DefineOptions()
   ],
   server: {
     port: 8080,
@@ -46,7 +48,7 @@ export default defineConfig({
     minify: false,
     sourcemap: false,
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(__dirname, 'index.ts'),
       name: 'wview-components',
       fileName: (format: string) => `wview-components.${format}.js`
     },
@@ -55,7 +57,8 @@ export default defineConfig({
       output: {
         globals: {
           vue: 'Vue'
-        }
+        },
+        exports: 'named'
       }
     }
   }
