@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from './components/button'
 import Icon from './components/icons'
+import Select from './components/from/select'
 </script>
 
 <template>
@@ -10,6 +11,8 @@ import Icon from './components/icons'
   <Icon name="system" />
   <Icon name="system_sort_ascending_line" />
   <Icon name="system_arrow_right_line" />
+  <div>Select 组件</div>
+  <Select />
 </template>
 
 <style lang="scss" scoped></style>
