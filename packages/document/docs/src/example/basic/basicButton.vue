@@ -1,34 +1,34 @@
 <script lang="ts" setup>
-import { wButton } from 'wview'
+import { Button } from 'wview'
 </script>
 
 <template>
   <div class="box">
     <div class="btn">
-      <wButton type="default">默认</wButton>
-      <wButton type="primary">主要</wButton>
-      <wButton type="success">成功</wButton>
-      <wButton type="info">信息</wButton>
-      <wButton type="warning">警告</wButton>
-      <wButton type="danger">危险</wButton>
+      <Button type="default">默认</Button>
+      <Button type="primary">主要</Button>
+      <Button type="success">成功</Button>
+      <Button type="info">信息</Button>
+      <Button type="warning">警告</Button>
+      <Button type="danger">危险</Button>
     </div>
 
     <div class="btn">
-      <wButton type="default" plain>默认</wButton>
-      <wButton type="primary" plain>主要</wButton>
-      <wButton type="success" plain>成功</wButton>
-      <wButton type="info" plain>信息</wButton>
-      <wButton type="warning" plain>警告</wButton>
-      <wButton type="danger" plain>危险</wButton>
+      <Button type="default" plain>默认</Button>
+      <Button type="primary" plain>主要</Button>
+      <Button type="success" plain>成功</Button>
+      <Button type="info" plain>信息</Button>
+      <Button type="warning" plain>警告</Button>
+      <Button type="danger" plain>危险</Button>
     </div>
 
     <div class="btn">
-      <wButton type="default" round>默认</wButton>
-      <wButton type="primary" round>主要</wButton>
-      <wButton type="success" round>成功</wButton>
-      <wButton type="info" round>信息</wButton>
-      <wButton type="warning" round>警告</wButton>
-      <wButton type="danger" round>危险</wButton>
+      <Button type="default" round>默认</Button>
+      <Button type="primary" round>主要</Button>
+      <Button type="success" round>成功</Button>
+      <Button type="info" round>信息</Button>
+      <Button type="warning" round>警告</Button>
+      <Button type="danger" round>危险</Button>
     </div>
   </div>
 </template>

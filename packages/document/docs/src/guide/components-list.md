@@ -1,5 +1,5 @@
 [Button 按钮](/components/basic/button.md)
 
-[icon](http://google.com)
+[icon 图标](/components/basic/icon.md)
 
 [Form](/components/Form/form.md)
