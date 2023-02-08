@@ -14,7 +14,7 @@ wview 提供了一套常用的图标集合。
 
 ### 使用包管理器
 
-```shell
+```shell  
 # 选择一个你喜欢的包管理器
 
 # NPM
@@ -50,7 +50,3 @@ for (const [key, component] of Object.entries(wview)) {
 :::
 
 #### System
-
-<script lang="ts" setup>
-
-</script>
