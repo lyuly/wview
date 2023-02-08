@@ -4,7 +4,8 @@
 
 import { default as Button } from './components/button'
 import { default as Icon } from './components/icons'
+import { default as Select } from './components/from/select'
 
-export { Button, Icon }
+export { Button, Icon, Select }
 
-export default [Button, Icon]
+export default [Button, Icon, Select]

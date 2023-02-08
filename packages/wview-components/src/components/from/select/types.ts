@@ -1,5 +1,10 @@
-// import { ExtractPropTypes } from 'vue'
+import { ExtractPropTypes } from 'vue'
 
-export const selectProps = {}
+export const selectProps = {
+  name: {
+    type: String,
+    default: ''
+  }
+}
 
-// export type selectProps = ExtractPropTypes<typeof selectProps>
+export type SelectProps = ExtractPropTypes<typeof selectProps>
