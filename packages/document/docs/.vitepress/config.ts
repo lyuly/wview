@@ -82,7 +82,71 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: title }],
     ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:image', content: '/seo.png' }],
-    ['meta', { property: 'og:description', content: description }]
+    ['meta', { property: 'og:description', content: description }],
+    // cdn
+    [
+      'script',
+      {
+        // system
+        src: '//at.alicdn.com/t/c/font_3879339_49sr9oev88q.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // arrow
+        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // DocumentEditing
+        src: '//at.alicdn.com/t/c/font_3890834_gbrsipgiklb.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // Media
+        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // ConstructionTraffic
+        src: '//at.alicdn.com/t/c/font_3890837_tg99neu66cm.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // Food
+        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // Goods
+        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // Weather
+        src: '//at.alicdn.com/t/c/font_3890845_jo5za7gu5e.js'
+      }
+    ],
+    [
+      'script',
+      {
+        // other
+        src: '//at.alicdn.com/t/c/font_3890846_rb3gtvvomne.js'
+      }
+    ]
   ],
 
   // 插件配置
@@ -121,13 +185,18 @@ export default defineConfig({
         {
           text: '基础组件',
           collapsible: true,
-
-          items: [{ text: 'Button', link: '/guide/components/basic/button' }]
+          items: [
+            { text: 'Button 按钮', link: '/components/basic/button' },
+            { text: 'Icon 图标', link: '/components/basic/icon' }
+          ]
         },
         {
           text: 'From 表单组件',
           collapsible: true,
-          items: [{ text: 'From', link: '/guide/components/form/form' }]
+          items: [
+            { text: 'From 表单', link: '/components/form/form' },
+            { text: 'select 选择器UI', link: '/components/form/select' }
+          ]
         }
       ]
     }

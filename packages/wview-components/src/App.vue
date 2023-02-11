@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import Button from './components/button'
-import IconSystem from './components/icons'
+import Icon from './components/icons'
+import Select from './components/from/select'
 </script>
 
 <template>
   <div>这里是wview组件库</div>
   <Button type="primary">默 认</Button>
-  <div>Iconfont</div>
-  <!-- <IconSystem name="jiahao" dot /> -->
-  <!-- <IconSystem name="jiahao1" dot badge="1" /> -->
-  <IconSystem name="jianhao" />
-  <IconSystem name="system" />
-  <IconSystem name="system_complete_fill" />
-  <IconSystem name="system_expired_fill" />
+  <div>IconFont</div>
+  <Icon name="system" />
+  <Icon name="system_sort_ascending_line" />
+  <Icon name="system_arrow_right_line" />
+  <div>Select 组件</div>
+  <Select />
 </template>
+
+<style lang="scss" scoped></style>
