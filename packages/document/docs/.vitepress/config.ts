@@ -96,9 +96,9 @@ export default defineConfig({
 
   themeConfig: {
     algolia: {
-      appId: 'BZIG6JY2ID',
-      apiKey: '08d0ca849bf58461247e96ae39c2d06c',
-      indexName: 'wview'
+      appId: 'IBOC4FAP6F',
+      apiKey: 'f595e263806c5ab65669d66b89b7825d',
+      indexName: 'wview-wiki'
     },
     nav: [
       { text: '概览', items: navQuickStart },
