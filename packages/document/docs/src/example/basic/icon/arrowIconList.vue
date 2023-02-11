@@ -1,12 +1,12 @@
 <template>
   <div class="box">
-    <wIcon class="icon" name="system" />
-    <wIcon class="icon" name="system_role" />
+    <Icon class="icon" name="system_sort_ascending_line" />
+    <Icon class="icon" name="system_arrow_right_line" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { wIcon } from 'wview'
+import { Icon } from 'wview'
 </script>
 
 <style lang="scss" scoped>
