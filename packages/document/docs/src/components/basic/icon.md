@@ -71,4 +71,42 @@ export default {
 这是一个提示
 :::
 
-#### System
+#### System 系统
+
+<script lang="ts" setup>
+  import systemIconList from '@/example/basic/icon/systemIconList.vue'
+  import arrowIconList from '@/example/basic/icon/arrowIconList.vue'
+
+</script>
+
+<ClientOnly>
+  <systemIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/systemIconList.vue
+:::
+
+#### Arrow 方向箭头
+
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
+
+#### DocumentEditing 文档编辑
+
+#### Media 多媒体
+
+#### ConstructionTraffic 建筑交通
+
+#### Food 食物
+
+#### Goods 物品
+
+#### Weather 天气
+
+#### Other 其他
