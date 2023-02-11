@@ -45,7 +45,7 @@ for (const [key, component] of Object.entries(wview)) {
 
 ### 图标集合
 
-<script lang='ts'>
+<!-- <script lang='ts'>
 export default {
   data() {
     return {
@@ -66,6 +66,7 @@ export default {
 
 :::details 展开代码
 <<< @/example/basic/ExampleIcon.vue
+::: -->
 
 ::: tip
 这是一个提示
@@ -76,7 +77,13 @@ export default {
 <script lang="ts" setup>
   import systemIconList from '@/example/basic/icon/systemIconList.vue'
   import arrowIconList from '@/example/basic/icon/arrowIconList.vue'
-
+  import editIconIconList from '@/example/basic/icon/editIconList.vue'
+  import foodIconList from '@/example/basic/icon/foodIconList.vue'
+  import goodsIconList from '@/example/basic/icon/goodsIconList.vue'
+  import mediaIconList from '@/example/basic/icon/mediaIconList.vue'
+  import trafficIconList from '@/example/basic/icon/trafficIconList.vue'
+  import weatherIconList from '@/example/basic/icon/weatherIconList.vue'
+  import otherIconList from '@/example/basic/icon/otherIconList.vue'
 </script>
 
 <ClientOnly>
@@ -99,14 +106,69 @@ export default {
 
 #### DocumentEditing 文档编辑
 
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
 #### Media 多媒体
+
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
 
 #### ConstructionTraffic 建筑交通
 
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
+
 #### Food 食物
+
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
 
 #### Goods 物品
 
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
+
 #### Weather 天气
 
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
+
 #### Other 其他
+
+<ClientOnly>
+  <arrowIconList/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/icon/arrowIconList.vue
+:::
