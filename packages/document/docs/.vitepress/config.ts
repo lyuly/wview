@@ -88,7 +88,7 @@ export default defineConfig({
       'script',
       {
         // system
-        src: '//at.alicdn.com/t/c/font_3879339_49sr9oev88q.js'
+        src: '//at.alicdn.com/t/c/font_3879339_m2jsr3e7c8.js'
       }
     ],
     [
