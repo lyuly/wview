@@ -6,6 +6,7 @@
 
 <script lang="ts">
 import './style/index.scss'
+// import './font/iconfont.js'
 import { defineComponent, computed } from 'vue'
 import { iconProps } from './type'
 export default defineComponent({
