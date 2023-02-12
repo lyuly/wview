@@ -5,7 +5,9 @@
 import { default as Button } from './components/button'
 import { default as Icon } from './components/icons'
 import { default as Select } from './components/from/select'
+import { default as Input } from './components/input'
 
-export { Button, Icon, Select }
 
-export default [Button, Icon, Select]
+export { Button, Icon, Select, Input }
+
+export default [Button, Icon, Select, Input]

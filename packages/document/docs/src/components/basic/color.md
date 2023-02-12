@@ -14,7 +14,7 @@ wview 提供了一套符合中国人审美的颜色，根据需要为你提供�
 
 wview 以<span style="color:#1772b4">群青</span>作为主色调。
 
-<div class="color-itembox">
+<div class="color-itembox"  style="color:#E6E8EB">
   <ul style="background:#1772B4;width:360px;border-radius: 10px 10px 0 0;margin:0px">
     <br/>
     <span style="font-weight: bold;font-size: 40px">群 青</span>
