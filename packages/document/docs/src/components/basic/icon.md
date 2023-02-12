@@ -109,68 +109,69 @@ export default {
 
 
 <ClientOnly>
-  <arrowIconList/>
+  <editIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/editIconList.vue
 :::
+
 #### Media 多媒体
 
 <ClientOnly>
-  <arrowIconList/>
+  <mediaIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/mediaIconList.vue
 :::
 
 #### ConstructionTraffic 建筑交通
 
 <ClientOnly>
-  <arrowIconList/>
+  <trafficIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/trafficIconList.vue
 :::
 
 #### Food 食物
 
 <ClientOnly>
-  <arrowIconList/>
+  <foodIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/foodIconList.vue
 :::
 
 #### Goods 物品
 
 <ClientOnly>
-  <arrowIconList/>
+  <goodsIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/goodsIconList.vue
 :::
 
 #### Weather 天气
 
 <ClientOnly>
-  <arrowIconList/>
+  <weatherIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/weatherIconList.vue
 :::
 
 #### Other 其他
 
 <ClientOnly>
-  <arrowIconList/>
+  <otherIconList/>
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/icon/arrowIconList.vue
+<<< @/example/basic/icon/otherIconList.vue
 :::

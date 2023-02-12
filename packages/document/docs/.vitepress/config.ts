@@ -95,7 +95,7 @@ export default defineConfig({
       'script',
       {
         // arrow
-        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+        src: '//at.alicdn.com/t/c/font_3879356_vn85o0o9kmn.js'
       }
     ],
     [
@@ -109,7 +109,7 @@ export default defineConfig({
       'script',
       {
         // Media
-        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
+        src: '//at.alicdn.com/t/c/font_3890835_ccc8q889c9g.js'
       }
     ],
     [
