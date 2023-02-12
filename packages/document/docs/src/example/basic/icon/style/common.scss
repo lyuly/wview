@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// TODO:边框合并 / 使用Grid布局
+table {
+  display: flex;
+  flex-wrap: wrap;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  tr {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    border: 1px solid #dcdfe6;
+
+    th {
+      width: 92px;
+      height: 92px;
+      border: 1px solid #dcdfe6;
+      background-color: #fff;
+      display: flex;
+      vertical-align: top;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        width: 1.6em;
+        height: 1.6em;
+        color: #303133;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    }
+  }
+}
