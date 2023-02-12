@@ -1,0 +1,14 @@
+<!-- html -->
+<template>
+    <Input v-model="value1" leftIcon="m-icon-search"></Input>
+    <br/>
+    <Input v-model="value2" rightIcon="m-icon-calendar"></Input>
+</template>
+
+<!-- js -->
+<script setup>
+import { Input } from 'wview'
+import { ref } from 'vue'
+const value1 = ref('')
+const value2 = ref('')
+</script>

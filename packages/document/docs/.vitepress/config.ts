@@ -189,7 +189,8 @@ export default defineConfig({
           items: [
             { text: 'Button 按钮', link: '/components/basic/button' },
             { text: 'Color 颜色', link: '/components/basic/color' },
-            { text: 'Icon 图标', link: '/components/basic/icon' }
+            { text: 'Icon 图标', link: '/components/basic/icon' },
+            { text: 'Input 输入框', link: '/components/basic/input' }
           ]
         },
         {
