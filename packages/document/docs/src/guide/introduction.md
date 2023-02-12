@@ -35,3 +35,9 @@
     <img alt="vercel" src="https://img.shields.io/badge/-Vercel-000000?logo=Vercel&logoColor=white"/>
   </p>
 </div>
+
+## 主题色背后的故事
+
+采用<span style="color:#1772B4; font-size: 16px; font-weight: bolder;">群青</span>作为我们的主题色
+
+群青（Ultramarine）不仅是一种蓝色颜料，更是[一首歌](https://i.y.qq.com/v8/playsong.html?songid=275094701#webchat_redirect)。虽然这个项目对于现在的我们来说困难重重，甚至会自我质疑，但是我们仍坚持做喜欢的事，追逐自己的梦想！
