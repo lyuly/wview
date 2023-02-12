@@ -1,16 +1,16 @@
 ---
 layout: home
 
-title: Wview组件库
+title: wview组件库
 titleTemplate: 轻量，灵活，可定制化的Vue3组件库
 
 hero:
-    name: Wview组件库
+    name: wview组件库
     text: 更快更好的编译
     tagline: 轻量，灵活，可定制化，采用中国色的Vue3组件库
     image:
       src: /symbol.svg
-      alt: Wview组件库
+      alt: wview组件库
     actions:
       - theme: brand
         text: 开始

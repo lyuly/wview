@@ -5,7 +5,7 @@ import DefineOptions from 'unplugin-vue-define-options/vite'
 
 const production = process.env.NODE_ENV === 'production'
 const site = production ? 'https://wview-wiki.vercel.app' : 'http://localhost:3000'
-const title = 'Wview组件库'
+const title = 'wview组件库'
 const description = '轻量，灵活，可定制化，采用中国色的Vue3组件库'
 
 const navQuickStart = [
@@ -57,7 +57,7 @@ export default defineConfig({
   // vitepress配置
   srcDir: './src',
   base: '/',
-  title: 'Wview组件库',
+  title: 'wview组件库',
   description: '轻量，灵活，定制化的Vue3组件库',
   lastUpdated: true,
   head: [
@@ -197,8 +197,8 @@ export default defineConfig({
           text: 'From 表单组件',
           collapsible: true,
           items: [
-            { text: 'From 表单', link: '/components/form/form' },
-            { text: 'select 选择器UI', link: '/components/form/select' }
+            { text: 'From 表单', link: '/components/Form/form' },
+            { text: 'select 选择器UI', link: '/components/Form/select' }
           ]
         }
       ]
