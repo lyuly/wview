@@ -17,7 +17,7 @@
   outline: none;
   margin: 0;
   transition: 0.1s;
-  font-family: 'PingFang SC';
+  font-family: "PingFang SC";
   font-style: normal;
   font-weight: $text-font-weight;
   padding: 5px 16px;
@@ -50,7 +50,7 @@
 
   &.isPlain {
     @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
-  
+
     &:hover {
       @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-3);
     }
@@ -80,7 +80,7 @@
 
   &.isPlain {
     @include button_style($text-color: $primary, $bg-color: $white, $bd-color: $primary);
-  
+
     &:hover {
       @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $primary);
     }
@@ -98,7 +98,7 @@
 .#{$prefix}-button--primary.isDisabled.isPlain:active,
 .#{$prefix}-button--primary.isDisabled.isPlain:focus,
 .#{$prefix}-button--primary.isDisabled.isPlain:hover {
-  @include button_style($text-color: $primary-light-3, $bg-color: $primary-light-9, $bd-color: #79BBFF);
+  @include button_style($text-color: $primary-light-3, $bg-color: $primary-light-9, $bd-color: #79bbff);
 }
 
 .#{$prefix}-button--success {
@@ -110,7 +110,7 @@
 
   &.isPlain {
     @include button_style($text-color: $success, $bg-color: $white, $bd-color: $success);
-  
+
     &:hover {
       @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
     }
@@ -135,12 +135,12 @@
   @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
 
   &:hover {
-    @include button_style($text-color: $white, $bg-color: $info-light-3 , $bd-color: $info-light-3);
+    @include button_style($text-color: $white, $bg-color: $info-light-3, $bd-color: $info-light-3);
   }
 
   &.isPlain {
     @include button_style($text-color: $info, $bg-color: $white, $bd-color: $info);
-  
+
     &:hover {
       @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
     }
@@ -170,7 +170,7 @@
 
   &.isPlain {
     @include button_style($text-color: $danger, $bg-color: $white, $bd-color: $danger);
-  
+
     &:hover {
       @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
     }
@@ -199,7 +199,7 @@
 
   &.isPlain {
     @include button_style($text-color: $warning, $bg-color: $white, $bd-color: $warning);
-  
+
     &:hover {
       @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
     }

@@ -34,20 +34,5 @@ import { Button } from 'wview'
 </template>
 
 <style lang="scss" scoped>
-.box {
-  box-sizing: border-box;
-  position: relative;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 4px;
-  background-color: var(--vp-c-bg-mute);
-
-  .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 6px 16px;
-    gap: 4px;
-  }
-}
+@import 'styles/index.scss';
 </style>

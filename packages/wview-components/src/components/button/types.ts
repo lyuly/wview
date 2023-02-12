@@ -15,7 +15,7 @@ export const buttonProps = {
   round: Boolean,
   circle: Boolean,
   disabled: Boolean,
-  // icon: String,
+  icon: String,
   iconPosition: String,
   size: {
     type: String,

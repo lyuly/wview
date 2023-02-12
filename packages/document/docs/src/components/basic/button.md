@@ -14,6 +14,7 @@ outline: deep
 import basicButton from '@/example/basic/button/basicButton.vue'
 import disabledButton from '@/example/basic/button/disabledButton.vue'
 import sizeButton from '@/example/basic/button/sizeButton.vue'
+import iconButton from '@/example/basic/button/iconButton.vue'
 </script>
 
 <ClientOnly>
@@ -51,4 +52,15 @@ import sizeButton from '@/example/basic/button/sizeButton.vue'
 
 :::details 展开代码
 <<< @/example/basic/button/sizeButton.vue
+:::
+
+## 图标按钮
+带图标的按钮可增强按钮的可玩性和欣赏性（有无文字均可）
+
+<ClientOnly>
+  <iconButton/>
+</ClientOnly>
+
+:::details 展开代码
+<<< @/example/basic/button/iconButton.vue
 :::
