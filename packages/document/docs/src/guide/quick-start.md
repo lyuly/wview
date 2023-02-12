@@ -1,6 +1,6 @@
 # 快速开始
 
-本节将介绍如何在项目中使用 Wview
+本节将介绍如何在项目中使用 wview
 
 ## 用法
 
@@ -22,3 +22,16 @@ app.mount('#app')
 ```
 
 ### 按需导入
+
+```ts
+// main.ts
+import { createApp } from 'vue'
+import { Button } from 'wview'
+import 'wview/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(Button)
+app.mount('#app')
+```
