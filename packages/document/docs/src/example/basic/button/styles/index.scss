@@ -1,0 +1,15 @@
+.box {
+  box-sizing: border-box;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  background-color: var(--vp-c-bg-mute);
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 4px;
+  }
+}
