@@ -164,6 +164,7 @@ export default defineConfig({
       apiKey: 'f595e263806c5ab65669d66b89b7825d',
       indexName: 'wview-wiki'
     },
+    lastUpdatedText: '最后更新于',
     nav: [
       { text: '概览', items: navQuickStart },
       {
