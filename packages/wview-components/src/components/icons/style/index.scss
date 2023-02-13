@@ -1,10 +1,41 @@
 .icon {
-  width: 1.5em;
-  height: 1.5em;
-  color: #303133;
-  vertical-align: -0.15em;
+  width: 1em;
+  height: 1em;
+  // color: #303133;
+  // vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+
+.wview-icon {
+  display: inline-block;
+  position: relative;
+  vertical-align: -0.15em;
+
+  .wview-info {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    box-sizing: border-box;
+    min-width: 16px;
+    padding: 0 3px;
+    color: $white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid $white;
+    background-color: $info;
+    transform: translate(50% -50%);
+  }
+
+  .wview-dot {
+    width: 8px;
+    min-width: 0;
+    height: 8px;
+    background-color: $info;
+    border-radius: 100%;
+  }
 }
 
 // .wview-icon {

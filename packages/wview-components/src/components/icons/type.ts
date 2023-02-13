@@ -6,6 +6,12 @@ export const iconProps = {
   name: {
     type: String
   },
+  dot: {
+    type: Boolean
+  },
+  badge: {
+    type: String
+  },
   /**
    * @description icon color
    */

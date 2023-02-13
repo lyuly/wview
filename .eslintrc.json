@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:vue/vue3-essential",
+    "standard-with-typescript"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue",
+    "@typescript-eslint",
+    "import"
+  ],
+  "ignorePatterns": [".eslintrc.js"],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "packages/*/tsconfig.json"
+      }
+    }
+  }
+}
