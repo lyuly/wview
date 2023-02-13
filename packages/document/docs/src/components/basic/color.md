@@ -171,7 +171,7 @@ wview 根据不同使用场景，我们提供了以下辅助色（作用于消�
 
 <div style="display:flex;width:650px;justify-content:space-between;flex-wrap: wrap">
 
-  <div class="color-itembox">
+  <div class="color-itembox" style="color:#E6E8EB">
     <ul style="background:#303133;width:170px;height:160px;border-radius: 10px;margin:0px">
       <br/>
       <span style="font-weight: bold;font-size: 25px">文本色</span>
