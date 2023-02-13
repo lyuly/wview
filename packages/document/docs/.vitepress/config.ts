@@ -165,6 +165,7 @@ export default defineConfig({
       indexName: 'wview-wiki'
     },
     lastUpdatedText: '最后更新于',
+    logo: '/symbol.svg',
     nav: [
       { text: '概览', items: navQuickStart },
       {
