@@ -8,9 +8,8 @@ import { Button } from 'wview'
       <Button icon="jiahao">加号</Button>
       <Button icon="jianhao">减号</Button>
       <Button icon="loading"></Button>
-      <Button icon="xiaoxi-zhihui"></Button>
-      <Button icon="jurassic_info"></Button>
-      <Button icon="shouji"></Button>
+      <Button icon="xiaoxi-zhihui" icon-position="right">小米</Button>
+      <Button icon="jurassic_info" icon-position="left">通知</Button>
     </div>
   </div>
 </template>

@@ -83,70 +83,6 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:image', content: '/seo.png' }],
     ['meta', { property: 'og:description', content: description }],
-    // cdn
-    [
-      'script',
-      {
-        // system
-        src: '//at.alicdn.com/t/c/font_3879339_m2jsr3e7c8.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // arrow
-        src: '//at.alicdn.com/t/c/font_3879356_vn85o0o9kmn.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // DocumentEditing
-        src: '//at.alicdn.com/t/c/font_3890834_gbrsipgiklb.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // Media
-        src: '//at.alicdn.com/t/c/font_3890835_ccc8q889c9g.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // ConstructionTraffic
-        src: '//at.alicdn.com/t/c/font_3890837_tg99neu66cm.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // Food
-        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // Goods
-        src: '//at.alicdn.com/t/c/font_3879356_hv7qj1mfp6t.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // Weather
-        src: '//at.alicdn.com/t/c/font_3890845_jo5za7gu5e.js'
-      }
-    ],
-    [
-      'script',
-      {
-        // other
-        src: '//at.alicdn.com/t/c/font_3890846_rb3gtvvomne.js'
-      }
-    ]
   ],
 
   // 插件配置
@@ -165,6 +101,7 @@ export default defineConfig({
       indexName: 'wview-wiki'
     },
     lastUpdatedText: '最后更新于',
+    logo: '/symbol.svg',
     nav: [
       { text: '概览', items: navQuickStart },
       {
