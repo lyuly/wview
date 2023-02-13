@@ -1,4 +1,5 @@
 node_modules/*
 packages/**/node_modules/*
 packages/**/dist/*
-packages/**/build/*
+packages/wview-components/src/components/icons/font/iconfont.js
+packages/wview-components/src/components/icons/font/iconfont_arrow.js

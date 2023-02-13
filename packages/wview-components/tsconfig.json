@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "sourceMap": true,
     "lib": ["esnext", "dom"],
-    "types": ["node", "vite/client"]
+    "types": ["node", "vite/client"],
+    "allowJs": true
   }
 }
