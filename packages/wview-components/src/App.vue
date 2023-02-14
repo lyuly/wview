@@ -3,6 +3,7 @@ import Button from './components/button'
 import Icon from './components/icons'
 import Select from './components/from/select'
 import Input from './components/input'
+import Upload from './components/upload'
 </script>
 
 <template>
@@ -15,6 +16,9 @@ import Input from './components/input'
   <Icon name="system_arrow_right_line" />
   <div>Select 组件</div>
   <Select />
+  <div>
+    <Upload></Upload>
+  </div>
 </template>
 
 <style lang="scss" scoped></style>
