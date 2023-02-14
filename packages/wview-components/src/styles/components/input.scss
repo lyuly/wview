@@ -8,12 +8,13 @@
   position: relative;
   box-sizing: border-box;
   input{
+    margin-right: 10px;
     width:100%;
     font-size:14px;
     outline:none;
     border:0;
     margin:0;
-    padding:10px 10px 10px 10px;
+    padding:5px 10px;
     box-sizing: border-box;
     color:#606266;
   }
@@ -32,10 +33,12 @@
 }
 .w-input-password-showpassword-default{
   input{
-    padding-right:30px
+    padding-right:30px;
+    margin-right: 10px;
   }
 }
 .w-input-clearable{
+  margin-right: 10px;
   width:100%;
   height:35px;
   border:1px solid #dcdfe6f6;
@@ -45,12 +48,13 @@
   position: relative;
   box-sizing: border-box;
   input{
+    margin-right: 10px;
     width:100%;
     font-size:14px;
     outline:none;
     border:0;
     margin:0;
-    padding:10px 30px 10px 10px;
+    padding:5px 10px;
     box-sizing: border-box;
     color:#606266;
   }
@@ -76,13 +80,17 @@
   transition: all .2s ease;
   position: relative;
   box-sizing: border-box;
+  .slot{
+    margin-left: 10px;
+  }
   input{
+    margin-right: 10px;
     width:100%;
     font-size:13px;
     outline:none;
     border:0;
     margin:0;
-    padding:7px 30px 7px 10px;
+    padding:5px 10px;
     box-sizing: border-box;
     color:#606266
   }
@@ -101,7 +109,8 @@
 }
 .w-input-password-showpassword-small{
   input{
-    padding-right:30px
+    padding-right:30px;
+    margin-right: 10px;
   }
 }
 .w-input-mini,.w-input-password-mini,.w-input-password-showpassword-mini,.w-group-input-mini{
@@ -113,13 +122,18 @@
   transition: all .2s ease;
   position: relative;
   box-sizing: border-box;
+  .slot{
+    margin-left: 10px;
+    color: red;
+  }
   input{
+    margin-right: 10px;
     width:100%;
     font-size:12px;
     outline:none;
     border:0;
     margin:0;
-    padding:6px 10px 6px 10px;
+    padding:5px 10px;
     box-sizing: border-box;
     color:#606266;
   }
@@ -138,13 +152,15 @@
 }
 .w-input-password-showpassword-mini{
   input{
-    padding-right:30px
+    padding-right:30px;
+    margin-right: 10px;
   }
 }
 .w-input-left-icon-default{
   height:35px;
   input{
-    padding:10px 25px 10px 32px;
+    padding:5px 25px 5px 32px;
+    margin-right: 10px;
   }
   input::placeholder { /* 大部分现代浏览器 */
     color:    #c6c8cc;
@@ -160,7 +176,8 @@
 .w-input-left-icon-small{
   height:30px;
   input{
-    padding:7px 25px 7px 32px;
+    margin-right: 10px;
+    padding:5px 25px 5px 32px;
     font-size: 13px;
   }
   input::placeholder { /* 大部分现代浏览器 */
@@ -177,12 +194,14 @@
   .clearable-icon{
     font-size:13px;
     top:8px;
+    cursor: pointer;
   }
 }
 .w-input-left-icon-mini{
   height:28px;
   input{
-    padding:6px 25px 6px 32px;
+    margin-right: 10px;
+    padding:5px 25px 5px 32px;
     font-size: 12px;
   }
   input::placeholder { /* 大部分现代浏览器 */
@@ -199,12 +218,14 @@
   .clearable-icon{
     font-size:12px;
     top:7px;
+    cursor: pointer;
   }
 }
 .w-input-right-icon-default{
   height:35px;
   input{
-    padding:10px 32px 10px 10px;
+    padding:5px 32px 5px 10px;
+    margin-right: 10px;
   }
   input::placeholder { /* 大部分现代浏览器 */
     color:    #c6c8cc;
@@ -219,8 +240,9 @@
 .w-input-right-icon-small{
   height:30px;
   input{
-    padding:7px 32px 7px 10px;
+    padding:5px 32px 5px 10px;
     font-size: 13px;
+    margin-right: 10px;
   }
   input::placeholder { /* 大部分现代浏览器 */
     color:    #c6c8cc;
@@ -237,8 +259,9 @@
 .w-input-right-icon-mini{
   height:28px;
   input{
-    padding:6px 32px 6px 10px;
+    padding:5px 32px 5px 10px;
     font-size: 12px;
+    margin-right: 10px;
   }
   input::placeholder { /* 大部分现代浏览器 */
     color:    #c6c8cc;
@@ -256,6 +279,7 @@
   input{
     cursor: no-drop;
     color:#c3bfbf;
+    margin-right: 10px;
   }
   .clearable-icon{
     display:none
@@ -281,35 +305,39 @@
 	border: none;
 	height: auto;
 	.w-input-clearable{
+    margin-right: 10px;
 		height: 30px;
 		.clearable-icon{
 			top:7px;
 			font-size: 13px;
+      cursor: pointer;
 		}
 	}
 }
 .w-group-input-mini{
 	border: none;
 	.w-input-clearable{
+    margin-right: 10px;
 		height: 28px;
 		.clearable-icon{
 			top:8px;
 			font-size: 12px;
+      cursor: pointer;
 		}
 	}
 }
 .w-group-input-default :deep(.w-button){
-  padding:9px 20px !important;
-	border-radius: 0 2px 2px 0;
+  padding:5px 20px !important;
+	border-radius: 2px;
 }
 .w-group-input-small :deep(.w-button){
-  padding:6.6px 15px !important;
-	border-radius: 0 2px 2px 0;
+  padding:5px 20px !important;
+	border-radius: 2px;
 }
 .w-group-input-mini :deep(.w-button){
-	padding:7px 15px !important;
+	padding:5px 20px !important;
   font-size: 12px;
-	border-radius: 0 2px 2px 0;
+	border-radius: 2px;
 	i{
 		font-size: 12px;
 	}

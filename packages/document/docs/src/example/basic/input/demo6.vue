@@ -2,7 +2,7 @@
 <template>
   <Input v-model="value1" clearable>
     <template #btn>
-      <w-button type="primary" leftIcon="m-icon-search">搜索</w-button>
+      <w-button>搜索</w-button>
     </template>
   </Input>
 </template>
