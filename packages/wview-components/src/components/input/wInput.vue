@@ -1,23 +1,27 @@
 <template>
   <div :class="[`w-group-input-${size}`]" :style="{'min-width':'auto'}">
     <div :class="isClass" :style="isStyle" style="">
-      <i :class="['left-icon','iconfont',leftIcon]" v-if="!showPassword&&leftIcon!=''"></i>
+      <wIcon :name="leftIcon" :class="['left-icon','iconfont',leftIcon]" v-if="!showPassword&&leftIcon!=''"></wIcon>
       <input :type="inptype" @focus="focus" @blur="blur" :value="modelValue"  @input="iptChange" :disabled="disabled" @change="change" :placeholder="placeholder" :autofocus="autofocus" :readonly="readonly" :form="form"/>
        <transition name="slide-fade">
-        <i class="clearable-icon iconfont m-icon-close" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></i>
+        <wIcon :name="iconName" class="clearable-icon iconfont w-icon-close" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon>
       </transition>
-      <i :class="['right-icon','iconfont',rightIcon]" v-if="!showPassword&&rightIcon!=''"></i>
-      <i v-if="showPassword"  :class="['password-icon','iconfont m-icon-browse']" @click="showPwd(type)"></i>
+      <wIcon :name="rightIcon" :class="['right-icon','iconfont',rightIcon]" v-if="!showPassword&&rightIcon!=''"></wIcon>
+      <wIcon :name="iconName" v-if="showPassword"  :class="['password-icon','iconfont w-icon-browse']" @click="showPwd(type)"></wIcon>
     </div>
-    <slot name="btn"/>
+    <div class="slot" >
+      <slot class="slot-item" name="btn"/>
+    </div>
   </div>
 </template>
 <script>
+import wIcon from '../icons'
 import '@/styles/components/input.scss'
 import { defineComponent, reactive, ref, computed, useSlots } from 'vue'
 export default defineComponent(
   {
-    name: 'w-input'
+    name: 'w-input',
+    components: { wIcon }
   }
 )
 </script>
@@ -26,6 +30,8 @@ const emit = defineEmits(['update:modelValue', 'clear', 'focus', 'blur', 'input'
 const props = defineProps({
   // eslint-disable-next-line vue/require-prop-type-constructor
   modelValue: String | Number,
+  // eslint-disable-next-line vue/require-prop-type-constructor
+  iconName: String | Number,
   disabled: Boolean,
   clearable: Boolean,
   showPassword: Boolean,
@@ -54,6 +60,9 @@ const props = defineProps({
 })
 const slot = useSlots()
 const isStyle = ref({})
+const leftIcon = ref(props.leftIcon)
+const rightIcon = ref(props.rightIcon)
+const iconName = ref(props.iconName)
 const inptype = ref(props.type)
 const focusStyle = {
   width: slot.btn ? 'auto' : '100%',
