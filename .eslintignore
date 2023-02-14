@@ -1,5 +1,11 @@
 node_modules/*
 packages/**/node_modules/*
 packages/**/dist/*
-packages/wview-components/src/components/icons/font/iconfont.js
-packages/wview-components/src/components/icons/font/iconfont_arrow.js
+packages/wview-components/src/components/icons/font/arrow.js
+packages/wview-components/src/components/icons/font/system.js
+packages/wview-components/src/components/icons/font/weather.js
+packages/wview-components/src/components/icons/font/edit.js
+packages/wview-components/src/components/icons/font/media.js
+packages/wview-components/src/components/icons/font/other.js
+packages/wview-components/src/components/icons/font/traffic.js
+
