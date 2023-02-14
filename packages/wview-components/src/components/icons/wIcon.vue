@@ -8,9 +8,10 @@
 </template>
 
 <script lang="ts">
-import './style/index.scss'
+import '@/styles/components/icon.scss'
 import { defineComponent, computed, onMounted } from 'vue'
 import { iconProps } from './type'
+
 export default defineComponent({
   name: 'w-icon',
   props: iconProps,

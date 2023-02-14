@@ -1,6 +1,6 @@
 import { ExtractPropTypes } from 'vue'
 
-export const IconSize = ['medium', 'small', 'mini']
+export const IconSize = ['large', 'small', 'mini']
 
 export const iconProps = {
   name: {
@@ -23,7 +23,7 @@ export const iconProps = {
    */
   size: {
     type: [Number, String],
-    validator (value: string) {
+    validator(value: string) {
       return IconSize.includes(value)
     }
   }
