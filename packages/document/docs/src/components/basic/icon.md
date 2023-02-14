@@ -77,8 +77,7 @@ export default {
 <script lang="ts" setup>
   import systemIconList from '@/example/basic/icon/systemIconList.vue'
   import arrowIconList from '@/example/basic/icon/arrowIconList.vue'
-
-  import editIconIconList from '@/example/basic/icon/editIconList.vue'
+  import editIconList from '@/example/basic/icon/editIconList.vue'
   import foodIconList from '@/example/basic/icon/foodIconList.vue'
   import goodsIconList from '@/example/basic/icon/goodsIconList.vue'
   import mediaIconList from '@/example/basic/icon/mediaIconList.vue'
@@ -106,7 +105,6 @@ export default {
 :::
 
 #### DocumentEditing 文档编辑
-
 
 <ClientOnly>
   <editIconList/>
