@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-  <Input v-model="value1" placeholder="基本使用"></Input>
+  <Input v-model="value1" placeholder="请输入"></Input>
 </template>
 
 <!-- js -->
