@@ -16,8 +16,13 @@ export default defineComponent({
   props: iconProps,
   setup (props) {
     onMounted(() => {
-      import('./font/iconfont.js' as any)
-      import('./font/iconfont_arrow.js' as any)
+      import('./font/arrow.js' as any)
+      import('./font/system.js' as any)
+      import('./font/edit.js' as any)
+      import('./font/media.js' as any)
+      import('./font/traffic.js' as any)
+      import('./font/weather.js' as any)
+      import('./font/other.js' as any)
     })
     const iconName = computed(() => {
       return `#wview-${props.name}`
