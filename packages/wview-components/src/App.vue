@@ -2,8 +2,7 @@
 import Button from './components/button'
 import Icon from './components/icons'
 import Select from './components/from/select'
-import Input from './components/from/input'
-
+import Input from './components/input'
 </script>
 
 <template>
