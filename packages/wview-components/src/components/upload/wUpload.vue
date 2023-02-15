@@ -30,7 +30,7 @@ export default {
 }
 </script> -->
 
-<script setup lang="ts">
+<script setup lang="ts" name="w-upload">
 import '@/styles/components/upload/index.scss'
 import { ref } from 'vue'
 import Icon from '../icons/wIcon.vue'
