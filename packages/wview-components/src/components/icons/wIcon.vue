@@ -24,6 +24,8 @@ export default defineComponent({
       import('./font/traffic.js' as any)
       import('./font/weather.js' as any)
       import('./font/other.js' as any)
+      import('./font/food.js' as any)
+      import('./font/goods.js' as any)
     })
     const iconName = computed(() => {
       return `#wview-${props.name}`
