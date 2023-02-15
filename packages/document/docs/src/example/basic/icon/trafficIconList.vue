@@ -2,27 +2,13 @@
   <div class="container">
     <table>
       <tr>
-        <th>
-          <Icon class="icon" name="weibiaoti-3" />
-        </th>
-        <th>
-          <Icon class="icon" name="bicycle" />
-        </th>
-        <th>
-          <Icon class="icon" name="jianzhu_o" />
-        </th>
-        <th>
-          <Icon class="icon" name="a-xuexiaojianzhu" />
-        </th>
-        <th>
-          <Icon class="icon" name="lubiao" />
-        </th>
-        <th>
-          <Icon class="icon" name="lianxiwomendibiao" />
-        </th>
-        <th>
-          <Icon class="icon" name="huoche" />
-        </th>
+        <th><Icon name="weibiaoti-3" /></th>
+        <th><Icon name="bicycle" /></th>
+        <th><Icon name="jianzhu_o" /></th>
+        <th><Icon name="a-xuexiaojianzhu" /></th>
+        <th><Icon name="lubiao" /></th>
+        <th><Icon name="lianxiwomendibiao" /></th>
+        <th><Icon name="huoche" /></th>
       </tr>
     </table>
   </div>

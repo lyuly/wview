@@ -8,4 +8,7 @@ packages/wview-components/src/components/icons/font/edit.js
 packages/wview-components/src/components/icons/font/media.js
 packages/wview-components/src/components/icons/font/other.js
 packages/wview-components/src/components/icons/font/traffic.js
+packages/wview-components/src/components/icons/font/food.js
+packages/wview-components/src/components/icons/font/goods.js
+packages/wview-components/src/components/progress/wProgress.vue
 

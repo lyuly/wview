@@ -17,8 +17,9 @@ import Upload from './components/upload'
   <Icon name="zhaopian" />
   <Icon name="weibiaoti-3" />
   <Icon name="weather_dongxue" />
+  <Icon name="cup" />
+  <Icon name="shoubiao" />
   <Icon name="chrome-fill" />
-
   <div>Select 组件</div>
   <Select />
   <div>

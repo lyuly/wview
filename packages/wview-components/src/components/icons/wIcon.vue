@@ -1,5 +1,5 @@
 <template>
-  <div class="wview-icon">
+  <div class="wview-icon icon">
     <svg class="icon" aria-hidden="true" :style="iconColor">
       <use :xlink:href="iconName"></use>
     </svg>
@@ -24,6 +24,8 @@ export default defineComponent({
       import('./font/traffic.js' as any)
       import('./font/weather.js' as any)
       import('./font/other.js' as any)
+      import('./font/food.js' as any)
+      import('./font/goods.js' as any)
     })
     const iconName = computed(() => {
       return `#wview-${props.name}`
