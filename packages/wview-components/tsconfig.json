@@ -1,5 +1,6 @@
 {
   "include": ["src/**/*", "src/**/*.vue"],
+  "exclude": ["node_modules", "build/**/*"],
   "compilerOptions": {
     "baseUrl": "/",
     "declaration": true,
@@ -16,6 +17,7 @@
     "sourceMap": true,
     "lib": ["esnext", "dom"],
     "types": ["node", "vite/client"],
-    "allowJs": true
+    "allowJs": true,
+    "outDir": "build"
   }
 }
