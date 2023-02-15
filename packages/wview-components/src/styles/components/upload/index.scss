@@ -1,0 +1,42 @@
+.w-upload {
+  .w-upload-list {
+    .w-upload-list_item:first-child {
+      margin-top: 10px;
+    }
+
+    .w-upload-list_item {
+      transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+      font-size: 14px;
+      margin-top: 5px;
+      position: relative;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 100%;
+      .w-upload-list_item-name {
+        display: block;
+        color: $text-color-regular;
+        margin-right: 40px;
+        overflow: hidden;
+        padding-left: 4px;
+        text-overflow: ellipsis;
+        transition: color 0.3s;
+        white-space: nowrap;
+      }
+      .w-upload-list_item-status-label {
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        line-height: inherit;
+      }
+
+      &:hover {
+        .w-upload-list_item-name {
+          color: $primary;
+        }
+        cursor: pointer;
+        background: $fill-color-light;
+      }
+    }
+  }
+}
