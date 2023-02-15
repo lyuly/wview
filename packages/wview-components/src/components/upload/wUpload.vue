@@ -7,16 +7,18 @@
       :accept="props.accept"
       ref="wIpt"
       @change="getFiles"
+      v-show="false"
     />
     <div @click="fileUpload">
       <slot />
     </div>
     <div class="w-upload-list">
       <div class="w-upload-list_item" v-for="(item, index) in filesList" :key="index">
-        <div class="k-upload-list_item-name">
+        <div class="w-upload-list_item-name">
+          <Icon name="shiyongwendang" />
           {{ item.name }}
         </div>
-        <div class="k-upload-list_item-status-label">
+        <div class="w-upload-list_item-status-label">
           <Icon name="cuowu" @click="delFile(index)" />
         </div>
       </div>
@@ -24,7 +26,7 @@
   </div>
 </template>
 
-<!-- <script>
+<!-- <script lang="ts">
 export default {
   name: 'w-upload'
 }
