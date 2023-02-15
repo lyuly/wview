@@ -8,6 +8,11 @@ import Upload from './components/upload'
 
 <template>
   <div>这里是wview组件库</div>
+  <div>
+    <Upload multiple accept="image/*">
+      <Button type="primary" size="small">文件上传</Button>
+    </Upload>
+  </div>
   <Button type="primary">默 认</Button>
   <Input placeholder="默 认"></Input>
   <div>IconFont</div>
@@ -22,9 +27,6 @@ import Upload from './components/upload'
   <Icon name="chrome-fill" />
   <div>Select 组件</div>
   <Select />
-  <div>
-    <Upload></Upload>
-  </div>
 </template>
 
 <style lang="scss" scoped></style>
