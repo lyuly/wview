@@ -9,7 +9,7 @@ import Upload from './components/upload'
 <template>
   <div>这里是wview组件库</div>
   <div>
-    <Upload>
+    <Upload multiple accept="image/*">
       <Button type="primary" size="small">文件上传</Button>
     </Upload>
   </div>
