@@ -82,7 +82,7 @@ export default defineConfig({
     ['meta', { property: 'og:site_name', content: title }],
     ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:image', content: '/seo.png' }],
-    ['meta', { property: 'og:description', content: description }],
+    ['meta', { property: 'og:description', content: description }]
   ],
 
   // 插件配置
@@ -127,7 +127,8 @@ export default defineConfig({
             { text: 'Button 按钮', link: '/components/basic/button' },
             { text: 'Color 颜色', link: '/components/basic/color' },
             { text: 'Icon 图标', link: '/components/basic/icon' },
-            { text: 'Input 输入框', link: '/components/basic/input' }
+            { text: 'Input 输入框', link: '/components/basic/input' },
+            { text: 'progress 进度条', link: '/components/basic/progress' }
           ]
         },
         {
