@@ -12,8 +12,14 @@ import Upload from './components/upload'
   <Input placeholder="默 认"></Input>
   <div>IconFont</div>
   <Icon name="system" />
-  <Icon name="system_sort_ascending_line" />
-  <Icon name="system_arrow_right_line" />
+  <Icon name="system_sort_line" />
+  <Icon name="sucai" />
+  <Icon name="zhaopian" />
+  <Icon name="weibiaoti-3" />
+  <Icon name="weather_dongxue" />
+  <Icon name="cup" />
+  <Icon name="shoubiao" />
+  <Icon name="chrome-fill" />
   <div>Select 组件</div>
   <Select />
   <div>

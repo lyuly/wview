@@ -77,8 +77,7 @@ export default {
 <script lang="ts" setup>
   import systemIconList from '@/example/basic/icon/systemIconList.vue'
   import arrowIconList from '@/example/basic/icon/arrowIconList.vue'
-
-  import editIconIconList from '@/example/basic/icon/editIconList.vue'
+  import editIconList from '@/example/basic/icon/editIconList.vue'
   import foodIconList from '@/example/basic/icon/foodIconList.vue'
   import goodsIconList from '@/example/basic/icon/goodsIconList.vue'
   import mediaIconList from '@/example/basic/icon/mediaIconList.vue'
@@ -106,7 +105,6 @@ export default {
 :::
 
 #### DocumentEditing 文档编辑
-
 
 <ClientOnly>
   <editIconList/>
@@ -175,3 +173,38 @@ export default {
 :::details 展开代码
 <<< @/example/basic/icon/otherIconList.vue
 :::
+
+## Attributes
+
+<html>
+ <head></head>
+ <body>
+  <table>
+   <thead>
+    <tr>
+     <th>参数</th>
+     <th>说明</th>
+     <th>类型</th>
+     <th>可选值</th>
+     <th>默认值</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>name</td>
+     <td>图标名</td>
+     <td>string</td>
+     <td>—</td>
+     <td>—</td>
+    </tr>
+    <tr>
+     <td>color</td>
+     <td>颜色</td>
+     <td>string</td>
+     <td>—</td>
+     <td>#303133</td>
+    </tr>
+   </tbody>
+  </table>
+ </body>
+</html>

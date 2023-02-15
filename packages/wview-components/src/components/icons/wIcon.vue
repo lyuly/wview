@@ -1,5 +1,5 @@
 <template>
-  <div class="wview-icon">
+  <div class="wview-icon icon">
     <svg class="icon" aria-hidden="true" :style="iconColor">
       <use :xlink:href="iconName"></use>
     </svg>
@@ -8,16 +8,24 @@
 </template>
 
 <script lang="ts">
-import './style/index.scss'
+import '@/styles/components/icon.scss'
 import { defineComponent, computed, onMounted } from 'vue'
 import { iconProps } from './type'
+
 export default defineComponent({
   name: 'w-icon',
   props: iconProps,
   setup (props) {
     onMounted(() => {
-      import('./font/iconfont.js' as any)
-      import('./font/iconfont_arrow.js' as any)
+      import('./font/arrow.js' as any)
+      import('./font/system.js' as any)
+      import('./font/edit.js' as any)
+      import('./font/media.js' as any)
+      import('./font/traffic.js' as any)
+      import('./font/weather.js' as any)
+      import('./font/other.js' as any)
+      import('./font/food.js' as any)
+      import('./font/goods.js' as any)
     })
     const iconName = computed(() => {
       return `#wview-${props.name}`
