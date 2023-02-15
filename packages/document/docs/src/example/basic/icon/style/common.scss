@@ -3,18 +3,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+// 夜间模式
+.dark .vp-doc th {
+  background-color: var(--vp-c-white);
+}
+
 // TODO:边框合并 / 使用Grid布局
+
 table {
   display: flex;
   flex-wrap: wrap;
   border-spacing: 0;
-  border-collapse: collapse;
+  border: none;
 
   tr {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     border: 1px solid #dcdfe6;
+    border-collapse: collapse;
 
     th {
       width: 92px;

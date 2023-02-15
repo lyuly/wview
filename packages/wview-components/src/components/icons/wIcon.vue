@@ -43,20 +43,15 @@ export default defineComponent({
         color: props.color
       }
     })
-    // TODO:颜色和大小
-    // const iconColor = computed(() => {
-    //   return `${props.color}`
-    // })
-    // const iconSize = computed(() => {
-    //   return `${props.size}`
-    // })
+    const iconSize = computed(() => {
+      return `${props.size}`
+    })
     return {
       iconName,
       styleDot,
       badge,
-      iconColor
-      // iconColor,
-      // iconSize
+      iconColor,
+      iconSize
     }
   }
 })
