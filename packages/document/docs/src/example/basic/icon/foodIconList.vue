@@ -2,31 +2,31 @@
   <div class="container">
     <table>
       <tr>
-        <th><Icon class="icon" name="xuegao" /></th>
-        <th><Icon class="icon" name="wancan" /></th>
-        <th><Icon class="icon" name="cup" /></th>
-        <th><Icon class="icon" name="jiubei" /></th>
-        <th><Icon class="icon" name="bei" /></th>
-        <th><Icon class="icon" name="gaiwanbei" /></th>
+        <th><Icon name="xuegao" /></th>
+        <th><Icon name="wancan" /></th>
+        <th><Icon name="cup" /></th>
+        <th><Icon name="jiubei" /></th>
+        <th><Icon name="bei" /></th>
+        <th><Icon name="gaiwanbei" /></th>
         <th><Icon class="icon" name="wan2" /></th>
       </tr>
       <tr>
-        <th><Icon class="icon" name="bingqilin" /></th>
-        <th><Icon class="icon" name="xiyan" /></th>
-        <th><Icon class="icon" name="jinzhixiyan" /></th>
-        <th><Icon class="icon" name="bingqilin-danse" /></th>
-        <th><Icon class="icon" name="pingguo" /></th>
-        <th><Icon class="icon" name="wandou" /></th>
-        <th><Icon class="icon" name="bangbangtang" /></th>
+        <th><Icon name="bingqilin" /></th>
+        <th><Icon name="xiyan" /></th>
+        <th><Icon name="jinzhixiyan" /></th>
+        <th><Icon name="bingqilin-danse" /></th>
+        <th><Icon name="pingguo" /></th>
+        <th><Icon name="wandou" /></th>
+        <th><Icon name="bangbangtang" /></th>
       </tr>
       <tr>
-        <th><Icon class="icon" name="tangguo" /></th>
-        <th><Icon class="icon" name="hanbao" /></th>
-        <th><Icon class="icon" name="daocha" /></th>
-        <th><Icon class="icon" name="li" /></th>
-        <th><Icon class="icon" name="yingtao" /></th>
-        <th><Icon class="icon" name="putao" /></th>
-        <th><Icon class="icon" name="xuegao1" /></th>
+        <th><Icon name="tangguo" /></th>
+        <th><Icon name="hanbao" /></th>
+        <th><Icon name="daocha" /></th>
+        <th><Icon name="li" /></th>
+        <th><Icon name="yingtao" /></th>
+        <th><Icon name="putao" /></th>
+        <th><Icon name="xuegao1" /></th>
       </tr>
     </table>
   </div>

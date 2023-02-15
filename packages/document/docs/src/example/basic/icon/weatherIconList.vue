@@ -2,35 +2,17 @@
   <div class="container">
     <table>
       <tr>
-        <th>
-          <Icon class="icon" name="weather_dongxue" />
-        </th>
-        <th>
-          <Icon class="icon" name="WeatherRain" />
-        </th>
-        <th>
-          <Icon class="icon" name="weather2" />
-        </th>
-        <th>
-          <Icon class="icon" name="weather_qing" />
-        </th>
-        <th>
-          <Icon class="icon" name="weather_leizhenyu" />
-        </th>
-        <th>
-          <Icon class="icon" name="weather_yin" />
-        </th>
-        <th>
-          <Icon class="icon" name="weather_xiaoyu" />
-        </th>
+        <th><Icon name="weather_dongxue" /></th>
+        <th><Icon name="WeatherRain" /></th>
+        <th><Icon name="weather2" /></th>
+        <th><Icon name="weather_qing" /></th>
+        <th><Icon name="weather_leizhenyu" /></th>
+        <th><Icon name="weather_yin" /></th>
+        <th><Icon name="weather_xiaoyu" /></th>
       </tr>
       <tr>
-        <th>
-          <Icon class="icon" name="weather_wu" />
-        </th>
-        <th>
-          <Icon class="icon" name="WeatherMoon" />
-        </th>
+        <th><Icon name="weather_wu" /></th>
+        <th><Icon name="WeatherMoon" /></th>
       </tr>
     </table>
   </div>

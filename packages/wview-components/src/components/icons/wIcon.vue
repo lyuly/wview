@@ -1,5 +1,5 @@
 <template>
-  <div class="wview-icon">
+  <div class="wview-icon icon">
     <svg class="icon" aria-hidden="true" :style="iconColor">
       <use :xlink:href="iconName"></use>
     </svg>
