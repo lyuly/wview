@@ -2,55 +2,25 @@
   <div class="container">
     <table>
       <tr>
-        <th>
-          <Icon class="icon" name="maikefeng" />
-        </th>
-        <th>
-          <Icon class="icon" name="mic-off" />
-        </th>
-        <th>
-          <Icon class="icon" name="zanting" />
-        </th>
-        <th>
-          <Icon class="icon" name="bofang" />
-        </th>
-        <th>
-          <Icon class="icon" name="erji" />
-        </th>
-        <th>
-          <Icon class="icon" name="pc" />
-        </th>
-        <th>
-          <Icon class="icon" name="fenleisheyingshuma" />
-        </th>
+        <th><Icon name="maikefeng" /></th>
+        <th><Icon name="mic-off" /></th>
+        <th><Icon name="zanting" /></th>
+        <th><Icon name="bofang" /></th>
+        <th><Icon name="erji" /></th>
+        <th><Icon name="pc" /></th>
+        <th><Icon name="fenleisheyingshuma" /></th>
       </tr>
       <tr>
-        <th>
-          <Icon class="icon" name="zhaopian" />
-        </th>
-        <th>
-          <Icon class="icon" name="taiji" />
-        </th>
-        <th>
-          <Icon class="icon" name="shouji" />
-        </th>
-        <th>
-          <Icon class="icon" name="sheyingji01" />
-        </th>
-        <th>
-          <Icon class="icon" name="charutupian" />
-        </th>
-        <th>
-          <Icon class="icon" name="bg-pc" />
-        </th>
-        <th>
-          <Icon class="icon" name="zhaoxiangji" />
-        </th>
+        <th><Icon name="zhaopian" /></th>
+        <th><Icon name="taiji" /></th>
+        <th><Icon name="shouji" /></th>
+        <th><Icon name="sheyingji01" /></th>
+        <th><Icon name="charutupian" /></th>
+        <th><Icon name="bg-pc" /></th>
+        <th><Icon name="zhaoxiangji" /></th>
       </tr>
       <tr>
-        <th>
-          <Icon class="icon" name="lingsheng" />
-        </th>
+        <th><Icon name="lingsheng" /></th>
       </tr>
     </table>
   </div>
