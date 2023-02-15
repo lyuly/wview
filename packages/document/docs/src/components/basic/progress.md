@@ -9,11 +9,11 @@ outline: deep
 ## progress的使用
 
 <script  lang="ts"  setup>
-import demo1 from '@/example/basic/progress/Demo1.vue'
-import demo2 from '@/example/basic/progress/Demo2.vue'
-import demo3 from '@/example/basic/progress/Demo3.vue'
-import demo4 from '@/example/basic/progress/Demo4.vue'
-import demo5 from '@/example/basic/progress/Demo5.vue'
+import demo1 from '@/example/basic/progress/demoProgress1.vue'
+import demo2 from '@/example/basic/progress/demoProgress2.vue'
+import demo3 from '@/example/basic/progress/demoProgress3.vue'
+import demo4 from '@/example/basic/progress/demoProgress4.vue'
+import demo5 from '@/example/basic/progress/demoProgress5.vue'
 </script>
 
 #### 基本使用
@@ -25,7 +25,7 @@ import demo5 from '@/example/basic/progress/Demo5.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/progress/demo1.vue
+<<< @/example/basic/progress/demoProgress1.vue
 :::
 
 #### 进度条长度
@@ -37,7 +37,7 @@ import demo5 from '@/example/basic/progress/Demo5.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/progress/demo2.vue
+<<< @/example/basic/progress/demoProgress2.vue
 :::
 
 #### 文字显示
@@ -49,7 +49,7 @@ import demo5 from '@/example/basic/progress/Demo5.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/progress/demo3.vue
+<<< @/example/basic/progress/demoProgress3.vue
 :::
 
 #### 进度条长度
@@ -61,7 +61,7 @@ import demo5 from '@/example/basic/progress/Demo5.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/progress/demo4.vue
+<<< @/example/basic/progress/demoProgress4.vue
 :::
 
 #### 动画进度条
@@ -73,5 +73,5 @@ import demo5 from '@/example/basic/progress/Demo5.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/progress/demo5.vue
+<<< @/example/basic/progress/demoProgress5.vue
 :::
