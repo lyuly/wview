@@ -2,21 +2,11 @@
   <div class="container">
     <table>
       <tr>
-        <th>
-          <Icon class="icon" name="02_dianpuguanli" />
-        </th>
-        <th>
-          <Icon class="icon" name="qizi" />
-        </th>
-        <th>
-          <Icon class="icon" name="chrome-fill" />
-        </th>
-        <th>
-          <Icon class="icon" name="elemo" />
-        </th>
-        <th>
-          <Icon class="icon" name="elemo1" />
-        </th>
+        <th><Icon name="02_dianpuguanli" /></th>
+        <th><Icon name="qizi" /></th>
+        <th><Icon name="chrome-fill" /></th>
+        <th><Icon name="elemo" /></th>
+        <th><Icon name="elemo1" /></th>
       </tr>
     </table>
   </div>

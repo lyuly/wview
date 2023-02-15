@@ -2,24 +2,12 @@
   <div class="container">
     <table>
       <tr>
-        <th>
-          <Icon class="icon" name="sucai" />
-        </th>
-        <th>
-          <Icon class="icon" name="shiyongwendang" />
-        </th>
-        <th>
-          <Icon class="icon" name="youjian" />
-        </th>
-        <th>
-          <Icon class="icon" name="bianji" />
-        </th>
-        <th>
-          <Icon class="icon" name="tianxie" />
-        </th>
-        <th>
-          <Icon class="icon" name="wenjian" />
-        </th>
+        <th><Icon name="sucai" /></th>
+        <th><Icon name="shiyongwendang" /></th>
+        <th><Icon name="youjian" /></th>
+        <th><Icon name="bianji" /></th>
+        <th><Icon name="tianxie" /></th>
+        <th><Icon name="wenjian" /></th>
       </tr>
     </table>
   </div>
