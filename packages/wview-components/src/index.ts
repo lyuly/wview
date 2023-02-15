@@ -6,8 +6,10 @@ import { default as Button } from './components/button'
 import { default as Icon } from './components/icons'
 import { default as Select } from './components/from/select'
 import { default as Input } from './components/input'
+import { default as Progress } from './components/progress'
+import { default as Upload } from './components/upload'
 
 
-export { Button, Icon, Select, Input }
+export { Button, Icon, Select, Input, Progress, Upload }
 
-export default [Button, Icon, Select, Input]
+export default [Button, Icon, Select, Input, Progress, Upload]

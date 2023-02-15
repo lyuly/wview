@@ -1,0 +1,46 @@
+.w-progress {
+  position: relative;
+  &.mr {
+    margin-right: 42px;
+  }
+  .container {
+    margin: 10px 0;
+    overflow: hidden;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    .loading {
+      background: $primary;
+      height: 4px;
+      animation: loading 2s infinite;
+    }
+    .error {
+      background: $danger;
+      height: 4px;
+    }
+
+    .step {
+      background: $primary;
+      height: 4px;
+      transition: width 2s;
+    }
+  }
+
+  .text {
+    position: absolute;
+    color: $primary;
+    margin-left: 8px;
+    top: -4px;
+    background-color: $white;
+    transition: left 2s;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
