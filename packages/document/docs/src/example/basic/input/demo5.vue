@@ -1,6 +1,6 @@
 <!-- html -->
 <template>
-    <Input v-model="value1"  placeholder="默认大小"></Input>
+    <Input v-model="myvalue"  placeholder="默认大小"></Input>
     <br/>
     <Input v-model="value2"  placeholder="小的" size="small"></Input>
     <br/>
@@ -11,7 +11,7 @@
 <script setup>
 import { Input } from 'wview'
 import { ref } from 'vue'
-const value1 = ref('')
+const myvalue = ref('')
 const value2 = ref('')
 const value3 = ref('')
 </script>

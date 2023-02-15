@@ -4,7 +4,8 @@
       <wIcon :name="leftIcon" :class="['left-icon','iconfont',leftIcon]" v-if="!showPassword&&leftIcon!=''"></wIcon>
       <input :type="inptype" @focus="focus" @blur="blur" :value="modelValue"  @input="iptChange" :disabled="disabled" @change="change" :placeholder="placeholder" :autofocus="autofocus" :readonly="readonly" :form="form"/>
        <transition name="slide-fade">
-        <wIcon :name="iconName" class="clearable-icon iconfont w-icon-close" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon>
+        <!-- <wIcon :name="cuowu" class="clearable-icon iconfont cuowu" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon> -->
+        <wIcon name="cuowu" :class="['clearable-icon','iconfont','cuowu']" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon>
       </transition>
       <wIcon :name="rightIcon" :class="['right-icon','iconfont',rightIcon]" v-if="!showPassword&&rightIcon!=''"></wIcon>
       <wIcon :name="iconName" v-if="showPassword"  :class="['password-icon','iconfont w-icon-browse']" @click="showPwd(type)"></wIcon>
