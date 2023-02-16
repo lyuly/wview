@@ -39,6 +39,12 @@ const members = [
     name:"kai9839",
     title:"Developer",
     links:[{icon:'github',link:'https://github.com/kai9839'}]
+  },
+  {
+    avatar:"https://avatars.githubusercontent.com/u/82150221?v=4",
+    name:"HPW404",
+    title:"Developer",
+    links:[{icon:'github',link:"https://github.com/HPW404"}]
   }
 ]
 </script>
