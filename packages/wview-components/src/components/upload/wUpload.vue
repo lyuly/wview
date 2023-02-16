@@ -9,9 +9,11 @@
       @change="getFiles"
       v-show="false"
     />
-    <div @click="fileUpload">
+    <!-- 点击上传 -->
+    <div @click="fileUpload" v-if="!props.drag">
       <slot />
     </div>
+    <Dragger v-else @getFilesList="getFilesList" @fileUpload="fileUpload" />
     <div class="w-upload-list">
       <div class="w-upload-list_item" v-for="(item, index) in filesList" :key="index">
         <div class="w-upload-list_item-name">
@@ -36,7 +38,7 @@ export default {
 import '@/styles/components/upload/index.scss'
 import { ref } from 'vue'
 import Icon from '../icons/wIcon.vue'
-
+import Dragger from './wDragger.vue'
 // 传入参数props
 type UploadType = {
   multiple?: boolean
@@ -70,6 +72,11 @@ const getFiles = (e: Event) => {
 const delFile = (index: number) => {
   filesList.value.splice(index, 1)
   emits('getFilesList', filesList.value)
+}
+
+const getFilesList = (file: File[]) => {
+  filesList.value = file
+  emits('getFilesList', file)
 }
 </script>
 
