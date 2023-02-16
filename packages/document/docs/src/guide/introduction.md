@@ -16,7 +16,7 @@ const members = [
     links: [{ icon: 'github', link:"https://github.com/lyuly"}]
   },
   {
-    avatar:"http://cdn.reday.asia/img/202302121650663.awebp",
+    avatar:"https://p3-passport.byteimg.com/img/user-avatar/6133eb6b49b7709241a07379f7f509c0~180x180.awebp",
     name:"Johnson Xin",
     title:"Developer&Captain",
     links:[
