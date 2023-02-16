@@ -16,7 +16,7 @@ const members = [
     links: [{ icon: 'github', link:"https://github.com/lyuly"}]
   },
   {
-    avatar:"http://cdn.reday.asia/img/202302121650663.awebp",
+    avatar:"https://p3-passport.byteimg.com/img/user-avatar/6133eb6b49b7709241a07379f7f509c0~180x180.awebp",
     name:"Johnson Xin",
     title:"Developer&Captain",
     links:[
@@ -39,6 +39,12 @@ const members = [
     name:"kai9839",
     title:"Developer",
     links:[{icon:'github',link:'https://github.com/kai9839'}]
+  },
+  {
+    avatar:"https://avatars.githubusercontent.com/u/82150221?v=4",
+    name:"HPW404",
+    title:"Developer",
+    links:[{icon:'github',link:"https://github.com/HPW404"}]
   }
 ]
 </script>
@@ -60,7 +66,7 @@ const members = [
   <p style="display: flex; gap: 4px">
     <img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white"/>
     <img alt="Vue" src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white"/>
-    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=Vue.js&logoColor=white"/>
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white"/>
   </p>
 
   <p style="display: flex; gap: 4px">

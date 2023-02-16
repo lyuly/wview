@@ -11,9 +11,11 @@ import TabPanel from './components/tab/src/wTabPanel.vue'
 <template>
   <div>这里是wview组件库</div>
   <div>
-    <Upload multiple accept="image/*">
+    <Upload :multiple="true" accept="image/*">
       <Button type="primary" size="small">文件上传</Button>
     </Upload>
+    <Upload drag></Upload>
+    <hr />
   </div>
   <Button type="primary">默 认</Button>
   <Input placeholder="默 认"></Input>
