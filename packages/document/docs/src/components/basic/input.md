@@ -11,14 +11,14 @@ outline: deep
 
 input 的基本使用。
 <script  lang="ts"  setup>
-import demo1 from '@/example/basic/input/demo1.vue'
-import demo2 from '@/example/basic/input/demo2.vue'
-import demo3 from '@/example/basic/input/demo3.vue'
-import demo4 from '@/example/basic/input/demo4.vue'
-import demo5 from '@/example/basic/input/demo5.vue'
-import demo6 from '@/example/basic/input/demo6.vue'
-import demo7 from '@/example/basic/input/demo7.vue'
-import demo8 from '@/example/basic/input/demo8.vue'
+import demo1 from '@/example/basic/input/demoInput1.vue'
+import demo2 from '@/example/basic/input/demoInput2.vue'
+import demo3 from '@/example/basic/input/demoInput3.vue'
+import demo4 from '@/example/basic/input/demoInput4.vue'
+import demo5 from '@/example/basic/input/demoInput5.vue'
+import demo6 from '@/example/basic/input/demoInput6.vue'
+import demo7 from '@/example/basic/input/demoInput7.vue'
+import demo8 from '@/example/basic/input/demoInput8.vue'
 </script>
 
 <ClientOnly>
@@ -26,7 +26,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo1.vue
+<<< @/example/basic/input/demoInput1.vue
 :::
 
 ## 禁用状态
@@ -38,7 +38,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo2.vue
+<<< @/example/basic/input/demoInput2.vue
 :::
 
 ## 可清空数据
@@ -51,7 +51,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo3.vue
+<<< @/example/basic/input/demoInput3.vue
 :::
 
 ## 带图标
@@ -65,7 +65,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo4.vue
+<<< @/example/basic/input/demoInput4.vue
 :::
 
 ## 不同大小
@@ -78,7 +78,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo5.vue
+<<< @/example/basic/input/demoInput5.vue
 :::
 
 ## 组合输入
@@ -90,7 +90,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo6.vue
+<<< @/example/basic/input/demoInput6.vue
 :::
 
 ## 密码类型
@@ -102,7 +102,7 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo7.vue
+<<< @/example/basic/input/demoInput7.vue
 :::
 
 ## 自定义 Focus 颜色
@@ -114,5 +114,5 @@ import demo8 from '@/example/basic/input/demo8.vue'
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/basic/input/demo8.vue
+<<< @/example/basic/input/demoInput8.vue
 :::
