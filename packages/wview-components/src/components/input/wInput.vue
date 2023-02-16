@@ -1,30 +1,58 @@
 <template>
-  <div :class="[`w-group-input-${size}`]" :style="{'min-width':'auto'}">
+  <div :class="[`w-group-input-${size}`]" :style="{ 'min-width': 'auto' }">
     <div :class="isClass" :style="isStyle" style="">
-      <wIcon :name="leftIcon" :class="['left-icon','iconfont',leftIcon]" v-if="!showPassword&&leftIcon!=''"></wIcon>
-      <input :type="inptype" @focus="focus" @blur="blur" :value="modelValue"  @input="iptChange" :disabled="disabled" @change="change" :placeholder="placeholder" :autofocus="autofocus" :readonly="readonly" :form="form"/>
-       <transition name="slide-fade">
+      <wIcon
+        :name="leftIcon"
+        :class="['left-icon', 'iconfont', leftIcon]"
+        v-if="!showPassword && leftIcon != ''"
+      ></wIcon>
+      <input
+        :type="inptype"
+        @focus="focus"
+        @blur="blur"
+        :value="modelValue"
+        @input="iptChange"
+        :disabled="disabled"
+        @change="change"
+        :placeholder="placeholder"
+        :autofocus="autofocus"
+        :readonly="readonly"
+        :form="form"
+      />
+      <transition name="slide-fade">
         <!-- <wIcon :name="cuowu" class="clearable-icon iconfont cuowu" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon> -->
-        <wIcon name="cuowu" :class="['clearable-icon','iconfont','cuowu']" v-if="!showPassword&&clearable&&modelValue!=''" @click="clear"></wIcon>
+        <wIcon
+          name="cuowu"
+          :class="['clearable-icon', 'iconfont', 'cuowu']"
+          v-if="!showPassword && clearable && modelValue != ''"
+          @click="clear"
+        ></wIcon>
       </transition>
-      <wIcon :name="rightIcon" :class="['right-icon','iconfont',rightIcon]" v-if="!showPassword&&rightIcon!=''"></wIcon>
-      <wIcon :name="iconName" v-if="showPassword"  :class="['password-icon','iconfont w-icon-browse']" @click="showPwd(type)"></wIcon>
+      <wIcon
+        :name="rightIcon"
+        :class="['right-icon', 'iconfont', rightIcon]"
+        v-if="!showPassword && rightIcon != ''"
+      ></wIcon>
+      <wIcon
+        :name="iconName"
+        v-if="showPassword"
+        :class="['password-icon', 'iconfont w-icon-browse']"
+        @click="showPwd(type)"
+      ></wIcon>
     </div>
-    <div class="slot" >
-      <slot class="slot-item" name="btn"/>
+    <div class="slot">
+      <slot class="slot-item" name="btn" />
     </div>
   </div>
 </template>
 <script>
 import wIcon from '../icons'
 import '@/styles/components/input.scss'
-import { defineComponent, reactive, ref, computed, useSlots } from 'vue'
-export default defineComponent(
-  {
-    name: 'w-input',
-    components: { wIcon }
-  }
-)
+import { defineComponent, ref, computed, useSlots } from 'vue'
+export default defineComponent({
+  name: 'w-input',
+  components: { wIcon }
+})
 </script>
 <script setup>
 const emit = defineEmits(['update:modelValue', 'clear', 'focus', 'blur', 'input', 'change'])
@@ -114,12 +142,26 @@ const showPwd = (e) => {
 const isClass = computed(() => {
   return [
     // eslint-disable-next-line eqeqeq
-    props.clearable ? 'w-input-clearable' : props.size == 'default' ? 'w-input-default' : `w-input-${props.size}`,
+    props.clearable
+      ? 'w-input-clearable'
+      : props.size === 'default'
+        ? 'w-input-default'
+        : `w-input-${props.size}`,
     // eslint-disable-next-line eqeqeq
-    props.leftIcon != '' ? `w-input-left-icon-${props.size}` : !props.clearable ? props.rightIcon != '' ? `w-input-right-icon-${props.size}` : '' : '',
+    props.leftIcon !== ''
+      ? `w-input-left-icon-${props.size}`
+      : !props.clearable
+          ? props.rightIcon !== ''
+            ? `w-input-right-icon-${props.size}`
+            : ''
+          : '',
     props.disabled ? 'w-input-disabled' : '',
     // eslint-disable-next-line eqeqeq
-    props.type == 'password' ? props.showPassword ? `w-input-password-showpassword-${props.size}` : `w-input-password-${props.size}` : ''
+    props.type == 'password'
+      ? props.showPassword
+        ? `w-input-password-showpassword-${props.size}`
+        : `w-input-password-${props.size}`
+      : ''
   ]
 })
 </script>

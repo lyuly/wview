@@ -27,7 +27,6 @@ import TabPanel from './components/tab/src/wTabPanel.vue'
   <Icon name="cup" />
   <Icon name="shoubiao" />
   <Icon name="chrome-fill" />
-
   <Tab name="123" default="tab1">
     <TabPanel name="tab1" tab="tab1"> 111 </TabPanel>
     <TabPanel name="tab2" tab="tab2"> 222 </TabPanel>
