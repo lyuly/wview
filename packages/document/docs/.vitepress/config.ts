@@ -132,10 +132,10 @@ export default defineConfig({
           ]
         },
         {
-          text: 'From 表单组件',
+          text: 'Form 表单组件',
           collapsible: true,
           items: [
-            { text: 'From 表单', link: '/components/Form/form' },
+            { text: 'Form 表单', link: '/components/Form/form' },
             { text: 'select 选择器UI', link: '/components/Form/select' },
             { text: 'Upload 上传', link: '/components/Form/upload' }
           ]

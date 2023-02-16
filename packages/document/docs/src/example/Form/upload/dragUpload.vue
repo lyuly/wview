@@ -1,8 +1,6 @@
 <template>
-  <div class="box">
-    <Upload>
-      <Button type="primary" size="large">文件上传</Button>
-    </Upload>
+  <div class="class">
+    <Upload :drag="true"></Upload>
   </div>
 </template>
 
