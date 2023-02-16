@@ -4,11 +4,53 @@
 
 来自天南地北的一群前端爱好❤️者，因为[字节跳动青训营](https://youthcamp.bytedance.com/)而相识😆
 
+<script setup>
+
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/20879193?v=4',
+    name: 'lyuly',
+    title: 'Developer&Creator',
+    links: [{ icon: 'github', link:"https://github.com/lyuly"}]
+  },
+  {
+    avatar:"http://cdn.reday.asia/img/202302121650663.awebp",
+    name:"Johnson Xin",
+    title:"Developer&Captain",
+    links:[
+      {icon:'github', link:"https://github.com/CodeGetters"},]
+  },
+  {
+    avatar:"https://avatars.githubusercontent.com/u/102934503?v=4",
+    name:"yokinc",
+    title:"Developer",
+    links:[{icon:"github",link:'https://github.com/yokinc'}]
+  },
+  {
+    avatar:"https://avatars.githubusercontent.com/u/91662930?v=4",
+    name:"North_Noah",
+    title:"Developer&UI",
+    links:[{icon:"github",link:"https://github.com/NorthNoah"}]
+  },
+  {
+    avatar:"https://avatars.githubusercontent.com/u/94916192?v=4",
+    name:"kai9839",
+    title:"Developer",
+    links:[{icon:'github',link:'https://github.com/kai9839'}]
+  }
+]
+</script>
+
+<VPTeamMembers size="small" :members="members" />
+
 ## 为什么做这个？
 
 提升自己，弥补不足，但更多的是因为对前端的热爱🥰
 
 ## 技术选型
+
 * Monorepo架构
 * Vite、Vue3、TypeScript、Sass、Vitepress
 * Husky、lint-staged、eslint、prettier
@@ -18,7 +60,7 @@
   <p style="display: flex; gap: 4px">
     <img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white"/>
     <img alt="Vue" src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white"/>
-    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=Vue.js&logoColor=white"/>
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white"/>
   </p>
 
   <p style="display: flex; gap: 4px">
