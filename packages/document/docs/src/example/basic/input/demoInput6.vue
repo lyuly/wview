@@ -1,15 +1,15 @@
 <!-- html -->
 <template>
-  <Input v-model="value1" clearable>
+  <Input v-model="myvalue" clearable>
     <template #btn>
-      <w-button>搜索</w-button>
+      <Button>搜索</Button>
     </template>
   </Input>
 </template>
 
 <!-- js -->
 <script setup>
-import { Input } from 'wview'
+import { Input, Button } from 'wview'
 import { ref } from 'vue'
-const value1 = ref('')
+const myvalue = ref('')
 </script>

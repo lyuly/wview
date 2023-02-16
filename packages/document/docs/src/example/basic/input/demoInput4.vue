@@ -1,14 +1,14 @@
 <!-- html -->
 <template>
-    <Input v-model="value1" leftIcon="jiahao"></Input>
-    <br/>
-    <Input v-model="value2" rightIcon="jiahao"></Input>
+  <Input v-model="myvalue" leftIcon="jiahao"></Input>
+  <br />
+  <Input v-model="value2" rightIcon="cuowu"></Input>
 </template>
 
 <!-- js -->
 <script setup>
 import { Input } from 'wview'
 import { ref } from 'vue'
-const value1 = ref('')
+const myvalue = ref('')
 const value2 = ref('')
 </script>
