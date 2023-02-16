@@ -29,10 +29,10 @@ $ pnpm i
 
 # 启动开发服务器
 $ pnpm docs:dev
-```
 
 # 编译打包
-￥ pnpm docs:build
+$ pnpm docs:build
+```
 
 ## 关于我们
 
