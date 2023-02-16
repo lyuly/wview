@@ -1,5 +1,5 @@
 <a href="https://wview.icu/" align="center">
-    <img src="./packages/document/docs/src/public/symbol.svg" style="width:500px;height:500px;align-center: center;">
+    <img src="./packages/document/docs/src/public/symbol.svg" style="width:200px;height:200px;align-center: center;">
 </a>
 <img src="https://img.shields.io/tokei/lines/github/lyuly/wview"> <img src="https://img.shields.io/github/last-commit/lyuly/wview">
 
@@ -28,10 +28,15 @@ $ git clone https://github.com/lyuly/wview.git
 $ pnpm i
 
 # 启动开发服务器
-$ pnpm dev
+$ pnpm docs:dev
+
+# 编译打包
+$ pnpm docs:build
 ```
 
 ## 关于我们
+
+来自天南地北的一群前端爱好❤️者，因为字节跳动青训营而相识😆你可以点击[这里]()看到我们
 
 ## 版权声明
 

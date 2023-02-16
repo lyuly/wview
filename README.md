@@ -1,5 +1,5 @@
 <a href="https://wview.icu/" align="center">
-    <img src="./packages/document/docs/src/public/symbol.svg" style="width:500px;height:500px;align-center: center;">
+    <img src="./packages/document/docs/src/public/symbol.svg" style="width:200px;height:200px;align-center: center;">
 </a>
 
 <img src="https://img.shields.io/tokei/lines/github/lyuly/wview"> <img src="https://img.shields.io/github/last-commit/lyuly/wview">
@@ -29,14 +29,15 @@ $ git clone https://github.com/lyuly/wview.git
 $ pnpm i
 
 # Starting the development server
-$ pnpm dev
-
 $ pnpm docs:dev
+
+# Compile
+$ pnpm docs:build
 ```
 
 ## About Us
 
-来自天南地北的一群前端爱好❤️者，因为字节跳动青训营而相识😆你可以点击[这里]()看到我们
+A group of front-end hobbyists❤️ from the north and south of the 🇨🇳China, metting because of the ByteDance Youth Camp 😆.You can see us by clicking here
 
 ## License
 
