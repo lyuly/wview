@@ -45,29 +45,6 @@ for (const [key, component] of Object.entries(wview)) {
 
 ### 图标集合
 
-<!-- <script lang='ts'>
-export default {
-  data() {
-    return {
-      dynamicComponent: null
-    }
-  },
-  mounted() {
-    import ('../../example/basic/ExampleIcon.vue').then(module => {
-      this.dynamicComponent = module.default
-    })
-  }
-}
-</script>
-
-<ClientOnly>
-  <component v-if="dynamicComponent" :is="dynamicComponent"></component>
-</ClientOnly>
-
-:::details 展开代码
-<<< @/example/basic/ExampleIcon.vue
-::: -->
-
 ::: tip
 这是一个提示
 :::

@@ -1,8 +1,8 @@
 <!-- html -->
 <template>
-    <Input v-model="myvalue" leftIcon="jiahao"></Input>
-    <br/>
-    <Input v-model="value2" rightIcon="cuowu"></Input>
+  <Input v-model="myvalue" leftIcon="jiahao"></Input>
+  <br />
+  <Input v-model="value2" rightIcon="cuowu"></Input>
 </template>
 
 <!-- js -->
