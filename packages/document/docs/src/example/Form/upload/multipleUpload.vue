@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <Upload>
+    <Upload :multiple="true">
       <Button type="primary" size="large">文件上传</Button>
     </Upload>
   </div>
