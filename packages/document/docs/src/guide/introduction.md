@@ -60,7 +60,7 @@ const members = [
   <p style="display: flex; gap: 4px">
     <img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white"/>
     <img alt="Vue" src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white"/>
-    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=Vue.js&logoColor=white"/>
+    <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-3178C6?logo=TypeScript&logoColor=white"/>
   </p>
 
   <p style="display: flex; gap: 4px">
