@@ -1,47 +1,35 @@
 <template>
   <div class="w-select">
-    <input type="text" readonly />
-    <div class="w-displayFrame">
-      <!-- <li v-for="item in items">2333</li> -->
-    </div>
+    <wInput leftIcon="search" placeholder="请选择" readonly></wInput>
+    <wIcon name="system_arrow_down_line" class="arrow" />
   </div>
 </template>
 
-<script lang="ts">
-import '@/styles/components/button.scss'
+<script>
+import wInput from '../../input'
+import wIcon from '../../icons'
 import { defineComponent } from 'vue'
 import { selectProps } from './types'
-
 export default defineComponent({
   name: 'w-select',
-  props: selectProps
+  props: selectProps,
+  components: { wInput, wIcon }
 })
 </script>
 
+<script setup></script>
 <style lang="scss" scoped>
 .w-select {
-  display: inline-block;
-  height: 40px;
   position: relative;
 
-  input {
-    border: 1px solid $border-color-darker;
-    padding: 8px 10px;
-    outline: none;
+  wInput {
+    user-select: none;
   }
 
-  .w-displayFrame {
-    width: 100%;
-    height: 200px;
-    border: 1px solid $border-color-darker;
+  .arrow {
     position: absolute;
-    // overflow: hidden;
-    top: 40px;
-
-    li {
-      list-style: none;
-      height: 40px;
-    }
+    top: 12px;
+    right: 14px;
   }
 }
 </style>

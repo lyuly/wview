@@ -36,7 +36,7 @@ import TabPanel from './components/tab/src/wTabPanel.vue'
   </Tab>
 
   <div>Select 组件</div>
-  <Select />
+  <Select></Select>
 </template>
 
 <style lang="scss" scoped></style>
