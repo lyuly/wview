@@ -28,12 +28,6 @@
   </div>
 </template>
 
-<!-- <script lang="ts">
-export default {
-  name: 'w-upload'
-}
-</script> -->
-
 <script setup lang="ts" name="w-upload">
 import '@/styles/components/upload/index.scss'
 import { ref } from 'vue'
