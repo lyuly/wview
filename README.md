@@ -39,6 +39,16 @@ $ pnpm docs:build
 
 A group of front-end hobbyists❤️ from the north and south of the 🇨🇳China, metting because of the ByteDance Youth Camp 😆.You can see us by clicking here
 
+## Contributors
+
+This project exists thanks to all the people who contribute.
+
+And thank you to all our backers! 🙏
+
+<a href="https://github.com/lyuly/wview/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lyuly/wview" />
+</a>
+
 ## License
 
 wview is open source software licensed as [MIT](./LICENSE).
