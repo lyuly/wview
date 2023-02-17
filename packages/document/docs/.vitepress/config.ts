@@ -128,7 +128,7 @@ export default defineConfig({
             { text: 'Color 颜色', link: '/components/basic/color' },
             { text: 'Icon 图标', link: '/components/basic/icon' },
             { text: 'Input 输入框', link: '/components/basic/input' },
-            { text: 'progress 进度条', link: '/components/basic/progress' },
+            { text: 'progress 进度条', link: '/components/basic/progress' }
           ]
         },
         {
@@ -139,6 +139,11 @@ export default defineConfig({
             { text: 'select 选择器UI', link: '/components/Form/select' },
             { text: 'Upload 上传', link: '/components/Form/upload' }
           ]
+        },
+        {
+          text: 'interaction 交互组件',
+          collapsible: true,
+          items: [{ text: 'modal 弹窗', link: '/components/interaction/modal' }]
         }
       ]
     }
