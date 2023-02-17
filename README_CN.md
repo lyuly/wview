@@ -38,6 +38,16 @@ $ pnpm docs:build
 
 来自天南地北的一群前端爱好❤️者，因为字节跳动青训营而相识😆你可以点击[这里]()看到我们
 
+## 贡献者
+
+这个项目的存在要感谢所有做出贡献的人。
+
+感谢所有支持我们的人!🙏
+
+<a href="https://github.com/lyuly/wview/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lyuly/wview" />
+</a>
+
 ## 版权声明
 
 该项目证书为 [MIT](./LICENSE).
