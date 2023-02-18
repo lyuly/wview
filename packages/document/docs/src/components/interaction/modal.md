@@ -7,8 +7,8 @@ outline: deep
 模态对话框
 
 <script lang="ts" setup>
-import demo1 from '@/example/interaction/modal/demo1.vue'
-import demo2 from '@/example/interaction/modal/demo2.vue'
+import demo1 from '@/example/interaction/modal/demoModal1.vue'
+import demo2 from '@/example/interaction/modal/demoModal2.vue'
 
 </script>
 
@@ -21,7 +21,7 @@ Modal 组件基本使用示例。
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/interaction/modal/demo1.vue
+<<< @/example/interaction/modal/demoModal1.vue
 :::
 
 ## 使用具名插槽自定义
@@ -32,5 +32,5 @@ Modal 组件基本使用示例。
 </ClientOnly>
 
 :::details 展开代码
-<<< @/example/interaction/modal/demo2.vue
+<<< @/example/interaction/modal/demoModal2.vue
 :::
