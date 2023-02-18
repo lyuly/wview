@@ -11,4 +11,6 @@ packages/wview-components/src/components/icons/font/traffic.js
 packages/wview-components/src/components/icons/font/food.js
 packages/wview-components/src/components/icons/font/goods.js
 packages/wview-components/src/components/progress/wProgress.vue
+packages/wview-components/src/components/modal/wModal.vue
+
 
