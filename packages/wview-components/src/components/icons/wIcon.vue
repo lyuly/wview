@@ -1,5 +1,11 @@
 <template>
-  <div class="wview-icon icon">
+  <div class="wview-icon icon icon-loading" v-if="loading">
+    <svg class="icon" aria-hidden="true" :style="iconColor">
+      <use :xlink:href="iconName"></use>
+    </svg>
+    <div v-if="dot" class="wview-info" :class="styleDot">{{ badge }}</div>
+  </div>
+  <div class="wview-icon icon" v-if="!loading">
     <svg class="icon" aria-hidden="true" :style="iconColor">
       <use :xlink:href="iconName"></use>
     </svg>

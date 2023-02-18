@@ -37,6 +37,25 @@
   }
 }
 
+.icon-loading {
+  display: inline-block;
+  margin-right: 5px;
+  animation: rotating 2s linear infinite;
+  --webkit-animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 // .wview-icon {
 //   display: inline-block;
 //   position: relative;

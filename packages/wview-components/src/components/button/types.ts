@@ -17,6 +17,7 @@ export const buttonProps = {
   disabled: Boolean,
   icon: String,
   iconPosition: String,
+  loading: Boolean,
   size: {
     type: String,
     validator (value: string) {
