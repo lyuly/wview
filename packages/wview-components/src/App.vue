@@ -6,6 +6,7 @@ import Input from './components/input'
 import Upload from './components/upload'
 import Tab from './components/tab'
 import TabPanel from './components/tab/src/wTabPanel.vue'
+import Switch from './components/switch'
 </script>
 
 <template>
@@ -36,6 +37,7 @@ import TabPanel from './components/tab/src/wTabPanel.vue'
     <TabPanel name="岗位需求管理" tab="岗位需求管理"> 岗位需求管理 </TabPanel>
   </Tab>
 
+  <Switch />
   <div>Select 组件</div>
   <Select></Select>
 </template>
