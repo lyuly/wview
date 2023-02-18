@@ -5,7 +5,7 @@ import Select from './components/from/select'
 import Input from './components/input'
 import Upload from './components/upload'
 import Tab from './components/tab'
-import TabPanel from './components/tab/src/wTabPanel.vue'
+import TabPanel from './components/tab/wTabPanel.vue'
 import Switch from './components/switch'
 </script>
 

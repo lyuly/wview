@@ -144,6 +144,11 @@ export default defineConfig({
           text: 'interaction 交互组件',
           collapsible: true,
           items: [{ text: 'modal 弹窗', link: '/components/interaction/modal' }]
+        },
+        {
+          text: 'Navigation 导航组件',
+          collapsible: true,
+          items: [{ text: 'tab 标签页', link: '/components/navigation/tab/tab' }]
         }
       ]
     }
