@@ -6,6 +6,7 @@ import Input from './components/input'
 import Upload from './components/upload'
 import Tab from './components/tab'
 import TabPanel from './components/tab/src/wTabPanel.vue'
+import Switch from './components/switch'
 </script>
 
 <template>
@@ -29,12 +30,14 @@ import TabPanel from './components/tab/src/wTabPanel.vue'
   <Icon name="cup" />
   <Icon name="shoubiao" />
   <Icon name="chrome-fill" />
-  <Tab name="123" default="tab1">
-    <TabPanel name="tab1" tab="tab1"> 111 </TabPanel>
-    <TabPanel name="tab2" tab="tab2"> 222 </TabPanel>
-    <TabPanel name="tab3" tab="tab3"> 333 </TabPanel>
+  <Tab name="123" default="用户配置" style="width: 600px">
+    <TabPanel name="用户配置" tab="用户配置"> 用户配置 </TabPanel>
+    <TabPanel name="角色配置" tab="角色配置"> 角色配置 </TabPanel>
+    <TabPanel name="管理配置" tab="管理配置"> 管理配置 </TabPanel>
+    <TabPanel name="岗位需求管理" tab="岗位需求管理"> 岗位需求管理 </TabPanel>
   </Tab>
 
+  <Switch />
   <div>Select 组件</div>
   <Select></Select>
 </template>
