@@ -12,6 +12,9 @@ export const iconProps = {
   badge: {
     type: String
   },
+  loading: {
+    type: Boolean
+  },
   /**
    * @description icon color
    */

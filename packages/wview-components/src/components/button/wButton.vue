@@ -44,11 +44,19 @@ export default defineComponent({
 <template>
   <div>
     <button class="w-button" :class="styleClass">
-      <wIcon v-if="iconFont.iconName && iconFont.position !== 'right'" :name="iconFont.iconName" />
+      <wIcon
+        v-if="iconFont.iconName && iconFont.position !== 'right'"
+        :name="iconFont.iconName"
+        :loading="loading"
+      />
       <span class="w-button-text" v-if="slots.default">
         <slot />
       </span>
-      <wIcon v-if="iconFont.position === 'right' && iconFont.iconName" :name="iconFont.iconName" />
+      <wIcon
+        v-if="iconFont.position === 'right' && iconFont.iconName"
+        :name="iconFont.iconName"
+        :loading="loading"
+      />
     </button>
   </div>
 </template>
