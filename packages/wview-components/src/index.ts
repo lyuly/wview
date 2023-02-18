@@ -9,7 +9,9 @@ import { default as Input } from './components/input'
 import { default as Progress } from './components/progress'
 import { default as Upload } from './components/upload'
 import { default as Modal } from './components/modal'
+import { default as Tab } from './components/tab'
+import { default as TabPanel } from './components/tab/wTabPanel.vue'
 
-export { Button, Icon, Select, Input, Progress, Upload, Modal }
+export { Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel }
 
-export default [Button, Icon, Select, Input, Progress, Upload, Modal]
+export default [Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel]
