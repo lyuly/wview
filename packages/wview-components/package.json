@@ -1,5 +1,5 @@
 {
-  "name": "wview",
+  "name": "wviewui",
   "version": "0.0.1",
   "types": "./dist/index.d.ts",
   "type": "module",
@@ -16,8 +16,7 @@
     }
   },
   "files": [
-    "src",
-    "dist"
+    "dist/*"
   ],
   "scripts": {
     "dev": "vite",
