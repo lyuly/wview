@@ -1,7 +1,7 @@
 {
   "name": "wview",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
     "dev": "pnpm -C packages/wview-components dev",
     "build": "pnpm -C packages/wview-components build",
