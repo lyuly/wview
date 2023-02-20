@@ -52,7 +52,6 @@ importers:
       markdown-it-include: ^2.0.0
       unplugin-vue-define-options: '0'
       vitepress: 1.0.0-alpha.36
-      vitepress-plugin-music: ^0.0.9
       vue: ^3.2.45
       wviewui: workspace:^0.0.2
     dependencies:
@@ -62,7 +61,6 @@ importers:
       markdown-it: 13.0.1
       unplugin-vue-define-options: 0.12.8_vue@3.2.47
       vitepress: 1.0.0-alpha.36_2r467mdhb7mblpaox4bg7fatdi
-      vitepress-plugin-music: registry.npmjs.org/vitepress-plugin-music/0.0.9_vitepress@1.0.0-alpha.36
       vue: 3.2.47
 
   packages/wview-components:
@@ -6332,17 +6330,6 @@ packages:
       browserslist: registry.npmjs.org/browserslist/4.21.5
       escalade: registry.npmjs.org/escalade/3.1.1
       picocolors: registry.npmjs.org/picocolors/1.0.0
-    dev: true
-
-  registry.npmjs.org/vitepress-plugin-music/0.0.9_vitepress@1.0.0-alpha.36:
-    resolution: {integrity: sha512-DPWkzWEoHmHhkbriGdOMdCUj99H6Oy+giEpokN2ac1HuWATULIQ3jvOD+2x7s8qPWawbDxoxkinVZgZuYNNRHQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/vitepress-plugin-music/-/vitepress-plugin-music-0.0.9.tgz}
-    id: registry.npmjs.org/vitepress-plugin-music/0.0.9
-    name: vitepress-plugin-music
-    version: 0.0.9
-    peerDependencies:
-      vitepress: '>=1.x'
-    dependencies:
-      vitepress: 1.0.0-alpha.36_2r467mdhb7mblpaox4bg7fatdi
     dev: true
 
   registry.npmjs.org/yallist/3.1.1:
