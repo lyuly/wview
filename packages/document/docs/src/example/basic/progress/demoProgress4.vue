@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Progress } from 'wview'
+import { Progress } from 'wviewui'
 import { reactive } from 'vue'
 const state = reactive({
   val: 0

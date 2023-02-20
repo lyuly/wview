@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { Button } from 'wview'
+import { Button } from 'wviewui'
 </script>
 
 <template>

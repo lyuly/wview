@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { Button, Modal, Input } from 'wview'
+import { Button, Modal, Input } from 'wviewui'
 import { reactive, ref } from 'vue'
 const state = reactive({
   isShow: false

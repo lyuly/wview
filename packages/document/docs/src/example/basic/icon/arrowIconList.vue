@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Icon } from 'wview'
+import { Icon } from 'wviewui'
 </script>
 
 <style lang="scss" scoped>

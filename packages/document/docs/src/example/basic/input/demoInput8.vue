@@ -10,7 +10,7 @@
 
 <!-- js -->
 <script setup>
-import { Input } from 'wview'
+import { Input } from 'wviewui'
 import { ref } from 'vue'
 const myvalue = ref('')
 </script>

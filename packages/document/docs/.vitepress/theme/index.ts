@@ -1,13 +1,21 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import 'wview/dist/styles.css'
-import { Button } from 'wview'
+import 'wviewui/dist/styles.css'
 import { EnhanceAppContext } from 'vitepress'
+import vitepressMusic from 'vitepress-plugin-music'
+import 'vitepress-plugin-music/lib/css/index.css'
+
+const playlist = [
+  {
+    name: '群青',
+    author: 'YOASOBI',
+    file: '/群青.mp3',
+  }
+]
 
 export default {
   ...DefaultTheme,
   enhanceApp(ctx: EnhanceAppContext) {
-    DefaultTheme.enhanceApp(ctx)
-    ctx.app.component('Button', Button)
+    vitepressMusic(playlist)
   }
 }
