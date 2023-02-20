@@ -8,5 +8,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Tab, TabPanel } from 'wview'
+import { Tab, TabPanel } from 'wviewui'
 </script>

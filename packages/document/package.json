@@ -15,10 +15,11 @@
     "markdown-it": "^13.0.1",
     "unplugin-vue-define-options": "0",
     "vitepress": "1.0.0-alpha.36",
+    "vitepress-plugin-music": "^0.0.9",
     "vue": "^3.2.45"
   },
   "dependencies": {
     "markdown-it-include": "^2.0.0",
-    "wview": "workspace:^0.0.1"
+    "wviewui": "workspace:^0.0.2"
   }
 }

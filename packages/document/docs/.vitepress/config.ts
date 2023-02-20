@@ -26,7 +26,7 @@ export default defineConfig({
   vite: {
     optimizeDeps: {
       exclude: [],
-      include: ['wview'],
+      include: ['wviewui'],
       force: true
     },
     server: {
@@ -37,7 +37,7 @@ export default defineConfig({
     },
     resolve: {
       alias: [
-        { find: '@wview', replacement: resolve(__dirname, '../../../wview-components') },
+        { find: '@wviewui', replacement: resolve(__dirname, '../../../wview-components') },
         { find: '@', replacement: resolve(__dirname, '../src') }
       ]
     },

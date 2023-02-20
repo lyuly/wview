@@ -8,5 +8,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Progress } from 'wview'
+import { Progress } from 'wviewui'
 </script>
