@@ -1,3 +1,6 @@
 # wview-components
 
-English | [中文](./README.zh_CN.md)
+* [github](https://github.com/lyuly/wview)
+* [docs](https://wview.icu)
+
+And thank you to all our backers!

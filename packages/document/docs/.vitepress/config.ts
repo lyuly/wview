@@ -4,7 +4,7 @@ import MarkitDownInclude from 'markdown-it-include'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 
 const production = process.env.NODE_ENV === 'production'
-const site = production ? 'https://wview-wiki.vercel.app' : 'http://localhost:3000'
+const site = production ? 'https://wview.icu' : 'http://localhost:3000'
 const title = 'wview组件库'
 const description = '轻量，灵活，可定制化，采用中国色的Vue3组件库'
 
@@ -66,7 +66,7 @@ export default defineConfig({
     ['meta', { rel: 'icon', type: 'image/svg+xml' }],
     [
       'meta',
-      { name: 'keywords', content: 'components, vue, headless-ui, variantjs, datatables, tailwind' }
+      { name: 'keywords', content: 'components, vue, vue3, typeScript, chinacolor' }
     ],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/symbol.svg' }],
     ['meta', { name: 'HandheldFriendly', content: 'True' }],
@@ -110,7 +110,7 @@ export default defineConfig({
         activeMatch: '/guide/quick-start'
       },
       { text: '组件', link: '/guide/components-list', activeMatch: '/guide/components-list' },
-      { text: 'v0.0.0', link: 'https://github.com/lyuly/wview' }
+      { text: 'v0.0.2', link: 'https://github.com/lyuly/wview' }
     ],
 
     sidebar: {

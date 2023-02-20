@@ -10,13 +10,13 @@
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install wview --save
+$ npm install wviewui --save
 
 # Yarn
-$ yarn add wview 
+$ yarn add wviewui 
 
 # pnpm
-$ pnpm install wview
+$ pnpm install wviewui
 ```
 
 如果您的网络环境不好，建议使用相关镜像服务 [cnpm](https://github.com/cnpm/cnpm) 或 [中国 NPM 镜像](https://registry.npmmirror.com/)。
