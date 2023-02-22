@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Upload } from 'wviewui'
+import { Button, Upload } from 'wviewui'
 </script>
 
 <style lang="less" scoped></style>
