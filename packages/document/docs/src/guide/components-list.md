@@ -15,3 +15,7 @@
 [Select 选择器UI](/components/Form/select.md)
 
 [Upload 上传](/components/Form/upload.md)
+
+[model 弹窗](/components/interaction/modal.md)
+
+[Tab 标签页](/components/navigation/tab/tab.md)
