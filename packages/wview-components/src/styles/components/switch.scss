@@ -1,3 +1,5 @@
+@use '../color/color.scss' as *;
+
 .w-switch {
   display: inline-block;
   align-items: center;
@@ -11,7 +13,7 @@
     position: relative;
     width: 40px;
     height: 20px;
-    border: 1px solid $blue;
+    border: 1px solid $primary;
     outline: none;
     border-radius: 10px;
     box-sizing: border-box;

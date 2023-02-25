@@ -135,6 +135,7 @@ export default defineConfig({
           text: 'Form 表单组件',
           collapsible: true,
           items: [
+            { text: 'Checkbox 选择框', link: '/components/Form/checkbox' },
             { text: 'Form 表单', link: '/components/Form/form' },
             { text: 'Select 选择器UI', link: '/components/Form/select' },
             { text: 'Upload 上传', link: '/components/Form/upload' }

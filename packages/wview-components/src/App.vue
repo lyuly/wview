@@ -7,10 +7,21 @@ import Upload from './components/upload'
 import Tab from './components/tab'
 import TabPanel from './components/tab/wTabPanel.vue'
 import Switch from './components/switch'
+import Checkbox from './components/checkbox/wCheckbox.vue'
+import { ref } from 'vue'
+
+const checked1 = ref(false)
+const checked2 = ref(false)
+const checked3 = ref(false)
 </script>
 
 <template>
   <div>这里是wview组件库</div>
+  <div>
+    <Checkbox v-model="checked1" label="苹果" />
+    <Checkbox v-model="checked2" label="香蕉" />
+    <Checkbox v-model="checked3" label="梨子" disabled />
+  </div>
   <div>
     <Upload :multiple="true" accept="image/*">
       <Button type="primary" size="small">文件上传</Button>
@@ -18,7 +29,15 @@ import Switch from './components/switch'
     <Upload drag></Upload>
     <hr />
   </div>
-  <Button type="primary">默 认</Button>
+  <div style="display: flex">
+    <Button type="primary">主要</Button>
+    <Button type="default">默认</Button>
+    <Button type="warning">警告</Button>
+    <Button type="danger" size="large">危险</Button>
+    <Button type="info">通知</Button>
+    <Button type="success" plain>成功</Button>
+    <Button type="default" disabled>默认</Button>
+  </div>
   <Input placeholder="默 认"></Input>
   <div>IconFont</div>
   <Icon name="system" />
