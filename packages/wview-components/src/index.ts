@@ -11,7 +11,8 @@ import { default as Upload } from './components/upload'
 import { default as Modal } from './components/modal'
 import { default as Tab } from './components/tab'
 import { default as TabPanel } from './components/tab/wTabPanel.vue'
+import { default as Checkbox } from './components/checkbox'
 
-export { Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel }
+export { Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox }
 
-export default [Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel]
+export default [Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox]

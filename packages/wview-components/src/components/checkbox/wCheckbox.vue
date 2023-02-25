@@ -5,6 +5,7 @@
         ref="inputRef"
         v-model="model"
         type="checkbox"
+        :isChecked="isChecked"
         :disabled="disabled"
         :value="label"
         @change="handleChange"
@@ -21,7 +22,7 @@
 <script lang="ts" setup>
 import '@/styles/components/checkbox.scss'
 import { computed, onMounted, watch, ref } from 'vue'
-import { checkboxEmits, checkboxProps } from './checkbox'
+import { checkboxEmits, checkboxProps } from './types'
 const props = defineProps(checkboxProps)
 const emit = defineEmits(checkboxEmits)
 

@@ -8,6 +8,8 @@
 
 [Progress 进度条](/components/basic/progress.md)
 
+[Checkbox 选择框](/components/Form/checkbox.md)
+
 [Form 表单](/components/Form/form.md)
 
 [Select 选择器UI](/components/Form/select.md)

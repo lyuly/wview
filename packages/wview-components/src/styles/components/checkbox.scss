@@ -25,8 +25,8 @@
   input[type='checkbox']::after {
     position: absolute;
     top: 0;
-    background-color: #fff;
-    color: #fff;
+    background-color: $white-1;
+    color: $white-1;
     width: 18px;
     height: 18px;
     display: inline-block;
@@ -36,7 +36,7 @@
     content: ' ';
     border-radius: 2px;
     box-sizing: border-box;
-    border: 1px solid #ddd;
+    border: 1px solid $white-1;
   }
   input[type='checkbox']:checked::after {
     content: '\2713';
@@ -62,8 +62,8 @@
       cursor: not-allowed;
       position: absolute;
       top: 0;
-      background-color: rgb(245, 247, 250);
-      color: #fff;
+      background-color: #f5f7fa;
+      color: $white;
       width: 18px;
       height: 18px;
       display: inline-block;
@@ -73,7 +73,7 @@
       content: ' ';
       border-radius: 2px;
       box-sizing: border-box;
-      border: 1px solid #ddd;
+      border: 1px solid $gray-9;
     }
   }
 }
