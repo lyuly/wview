@@ -1,3 +1,5 @@
+@use '../../color/color.scss' as *;
+
 .w-upload-dragger {
     background-color: $fill-color-blank;
     border: 1px dashed $border-color-lighter;

@@ -49,7 +49,7 @@ export default defineComponent({
         :name="iconFont.iconName"
         :loading="loading"
       />
-      <span class="w-button-text" v-if="slots.default">
+      <span class="w-button--text" v-if="slots.default">
         <slot />
       </span>
       <wIcon

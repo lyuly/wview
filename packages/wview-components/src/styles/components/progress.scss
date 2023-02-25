@@ -1,3 +1,5 @@
+@use '../color/color.scss' as *;
+
 .w-progress {
   position: relative;
   &.mr {

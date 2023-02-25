@@ -40,7 +40,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // eslint-disable-next-line @typescript-eslint/quotes
-        additionalData: `@import "@/styles/color/color.scss";`
+        // additionalData: `@import "@/styles/color/color.scss";`
       }
     }
   },

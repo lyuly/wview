@@ -1,10 +1,19 @@
+/* 
+命名空间示例
+@include b(button) === w-button
+  @include m(text) === w-button--text
+*/
+
+@use '../mixins/mixins.scss' as *;
+@use '../color/color.scss' as *;
+
 @mixin button_style($text-color: $primary, $bg-color: $border-color-lighter, $bd-color: $border-color-lighter) {
   color: $text-color;
   background-color: $bg-color;
   border-color: $border-color-lighter;
 }
 
-.#{$prefix}-button {
+@include b(button) {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -25,219 +34,152 @@
   font-size: 14px;
   border-radius: 4px;
 
-  .#{$prefix}-button--text {
+  @include m(text) {
     display: inline-block;
     margin: 0 4px;
-
+  
     &.hover {
       @include button_style($text-color: $primary, $bg-color: $border-color-lighter, $bd-color: $border-color-lighter);
     }
   }
 
-  &.isDisabled {
-    cursor: not-allowed;
-    background-image: none;
-    @include button_style($text-color: $secondary, $bg-color: $white, $bd-color: $border-color-lighter);
-  }
-}
-
-.#{$prefix}-button--default {
-  @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
-
-  &:hover {
-    @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-9);
-  }
-
-  &.isPlain {
+  @include m(default) {
     @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
 
     &:hover {
-      @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-3);
+      @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-9);
+    }
+
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
+
+      &:hover {
+        @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-3);
+      }
     }
   }
-}
 
-.#{$prefix}-button--default.isDisabled,
-.#{$prefix}-button--default.isDisabled:active,
-.#{$prefix}-button--default.isDisabled:focus,
-.#{$prefix}-button--default.isDisabled:hover {
-  @include button_style($text-color: $text-color-placeholder, $bg-color: $white, $bd-color: $border-color-light);
-}
-
-.#{$prefix}-button--default.isDisabled.isPlained,
-.#{$prefix}-button--default.isDisabled.isPlained:active,
-.#{$prefix}-button--default.isDisabled.isPlained:focus,
-.#{$prefix}-button--default.isDisabled.isPlained:hover {
-  @include button_style($text-color: $text-color-placeholder, $bg-color: $white, $bd-color: $border-color-light);
-}
-
-.#{$prefix}-button--primary {
-  @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $border-color-lighter);
-
-  &:hover {
-    @include button_style($text-color: $white, $bg-color: $primary-light-3, $bd-color: $primary-light-3);
-  }
-
-  &.isPlain {
-    @include button_style($text-color: $primary, $bg-color: $white, $bd-color: $primary);
+  @include m(primary) {
+    @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $border-color-lighter);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $primary);
+      @include button_style($text-color: $white, $bg-color: $primary-light-3, $bd-color: $primary-light-3);
+    }
+
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $primary, $bg-color: $white, $bd-color: $primary);
+
+      &:hover {
+        @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $primary);
+      }
     }
   }
-}
 
-.#{$prefix}-button--primary.isDisabled,
-.#{$prefix}-button--primary.isDisabled:active,
-.#{$prefix}-button--primary.isDisabled:focus,
-.#{$prefix}-button--primary.isDisabled:hover {
-  @include button_style($text-color: $white, $bg-color: $primary-light-3, $bd-color: $primary-light-5);
-}
-
-.#{$prefix}-button--primary.isDisabled.isPlain,
-.#{$prefix}-button--primary.isDisabled.isPlain:active,
-.#{$prefix}-button--primary.isDisabled.isPlain:focus,
-.#{$prefix}-button--primary.isDisabled.isPlain:hover {
-  @include button_style($text-color: $primary-light-3, $bg-color: $primary-light-9, $bd-color: #79bbff);
-}
-
-.#{$prefix}-button--success {
-  @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
-
-  &:hover {
-    @include button_style($text-color: $white, $bg-color: $success-light-3, $bd-color: $success-light-3);
-  }
-
-  &.isPlain {
-    @include button_style($text-color: $success, $bg-color: $white, $bd-color: $success);
+  @include m(success) {
+    @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
+      @include button_style($text-color: $white, $bg-color: $success-light-3, $bd-color: $success-light-3);
+    }
+  
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $success, $bg-color: $white, $bd-color: $success);
+  
+      &:hover {
+        @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
+      }
     }
   }
-}
 
-.#{$prefix}-button--success.isDisabled,
-.#{$prefix}-button--success.isDisabled:active,
-.#{$prefix}-button--success.isDisabled:focus,
-.#{$prefix}-button--success.isDisabled:hover {
-  @include button_style($text-color: $white, $bg-color: $success-light-5, $bd-color: $success-light-5);
-}
-
-.#{$prefix}-button--success.isDisabled.isPlain,
-.#{$prefix}-button--success.isDisabled.isPlain:active,
-.#{$prefix}-button--success.isDisabled.isPlain:focus,
-.#{$prefix}-button--success.isDisabled.isPlain:hover {
-  @include button_style($text-color: $success-light-5, $bg-color: $success-light-9, $bd-color: $success-light-5);
-}
-
-.#{$prefix}-button--info {
-  @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
-
-  &:hover {
-    @include button_style($text-color: $white, $bg-color: $info-light-3, $bd-color: $info-light-3);
-  }
-
-  &.isPlain {
-    @include button_style($text-color: $info, $bg-color: $white, $bd-color: $info);
+  @include m(info) {
+    @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
+      @include button_style($text-color: $white, $bg-color: $info-light-3, $bd-color: $info-light-3);
+    }
+
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $info, $bg-color: $white, $bd-color: $info);
+
+      &:hover {
+        @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
+      }
     }
   }
-}
 
-.#{$prefix}-button--info.isDisabled,
-.#{$prefix}-button--info.isDisabled:active,
-.#{$prefix}-button--info.isDisabled:focus,
-.#{$prefix}-button--info.isDisabled:hover {
-  @include button_style($text-color: $white, $bg-color: $info-light-5, $bd-color: $info-light-5);
-}
-
-.#{$prefix}-button--info.isDisabled.isPlain,
-.#{$prefix}-button--info.isDisabled.isPlain:active,
-.#{$prefix}-button--info.isDisabled.isPlain:focus,
-.#{$prefix}-button--info.isDisabled.isPlain:hover {
-  @include button_style($text-color: $info-light-5, $bg-color: $info-light-9, $bd-color: $info-light-5);
-}
-
-.#{$prefix}-button--danger {
-  @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
-
-  &:hover {
-    @include button_style($text-color: $white, $bg-color: $danger-light-3, $bd-color: $danger-light-3);
-  }
-
-  &.isPlain {
-    @include button_style($text-color: $danger, $bg-color: $white, $bd-color: $danger);
+  @include m(danger) {
+    @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
+      @include button_style($text-color: $white, $bg-color: $danger-light-3, $bd-color: $danger-light-3);
+    }
+
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $danger, $bg-color: $white, $bd-color: $danger);
+
+      &:hover {
+        @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
+      }
     }
   }
-}
 
-.#{$prefix}-button--danger.isDisabled,
-.#{$prefix}-button--danger.isDisabled:active,
-.#{$prefix}-button--danger.isDisabled:focus,
-.#{$prefix}-button--danger.isDisabled:hover {
-  @include button_style($text-color: $white, $bg-color: $danger-light-5, $bd-color: $danger-light-5);
-}
-
-.#{$prefix}-button--danger.isDisabled.isPlain,
-.#{$prefix}-button--danger.isDisabled.isPlain:active,
-.#{$prefix}-button--danger.isDisabled.isPlain:hover {
-  @include button_style($text-color: $danger-light-5, $bg-color: $danger-light-9, $bd-color: $danger-light-5);
-}
-
-.#{$prefix}-button--warning {
-  @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
-
-  &:hover {
-    @include button_style($text-color: $white, $bg-color: $warning-light-3, $bd-color: $warning-light-3);
-  }
-
-  &.isPlain {
-    @include button_style($text-color: $warning, $bg-color: $white, $bd-color: $warning);
+  @include m(warning) {
+    @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
+      @include button_style($text-color: $white, $bg-color: $warning-light-3, $bd-color: $warning-light-3);
+    }
+
+    &.isPlain {
+      opacity: 1;
+      @include button_style($text-color: $warning, $bg-color: $white, $bd-color: $warning);
+
+      &:hover {
+        @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
+      }
     }
   }
-}
 
-.#{$prefix}-button--warning.isDisabled,
-.#{$prefix}-button--warning.isDisabled:active,
-.#{$prefix}-button--warning.isDisabled:focus,
-.#{$prefix}-button--warning.isDisabled:hover {
-  @include button_style($text-color: $white, $bg-color: $warning-light-5, $bd-color: $warning-light-5);
-}
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
 
-.#{$prefix}-button--warning.isDisabled.isPlain,
-.#{$prefix}-button--warning.isDisabled.isPlain:active,
-.#{$prefix}-button--warning.isDisabled.isPlain:hover {
-  @include button_style($text-color: $warning-light-5, $bg-color: $warning-light-9, $bd-color: $warning-light-5);
-}
+  &.isDisabled {
+    opacity: .6;
+    cursor: no-drop;
 
-.#{$prefix}-button--large {
-  padding: 9px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-  line-height: 22px;
-}
+    &:hover,
+    &:focus {
+      opacity: .6;
+    }
+  }
 
-.#{$prefix}-button--small {
-  padding: 2px 12px;
-  font-size: 13px;
-  border-radius: 4px;
-  line-height: 20px;
-}
+  @include m(large) {
+    padding: 9px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 22px;
+  }
 
-.#{$prefix}-button--mini {
-  padding: 2px 12px;
-  font-size: 12px;
-  border-radius: 4px;
-  line-height: 18px;
+  @include m(small) {
+    padding: 2px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    line-height: 20px;
+  }
+
+  @include m(mini) {
+    padding: 2px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    line-height: 18px;
+  }
 }
 
 .isRound {
