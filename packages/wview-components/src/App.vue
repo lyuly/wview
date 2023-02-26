@@ -9,6 +9,7 @@ import TabPanel from './components/tab/wTabPanel.vue'
 import Switch from './components/switch'
 import Checkbox from './components/checkbox/wCheckbox.vue'
 import { ref } from 'vue'
+import Alert from './components/alert'
 
 const checked1 = ref(false)
 const checked2 = ref(false)
@@ -17,6 +18,13 @@ const checked3 = ref(false)
 
 <template>
   <div>这里是wview组件库</div>
+  <div>
+    <Alert>默认警告</Alert>
+    <Alert type="success">成功警告</Alert>
+    <Alert type="warning" size="mini">严重警告</Alert>
+    <Alert type="info" size="small">通知警告</Alert>
+    <Alert type="danger" size="large">危险警告</Alert>
+  </div>
   <div>
     <Checkbox v-model="checked1" label="苹果" />
     <Checkbox v-model="checked2" label="香蕉" />

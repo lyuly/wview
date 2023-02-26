@@ -149,7 +149,12 @@ export default defineConfig({
         {
           text: 'Navigation 导航组件',
           collapsible: true,
-          items: [{ text: 'Tab 标签页', link: '/components/navigation/tab/tab' }]
+          items: [{ text: 'tab 标签页', link: '/components/navigation/tab/tab' }]
+        },
+        {
+          text: 'Other 其他',
+          collapsible: true,
+          items: [{ text: 'alert 警告提示', link: '/components/other/alert' }]
         }
       ]
     }
