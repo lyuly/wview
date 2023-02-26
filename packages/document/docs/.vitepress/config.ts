@@ -110,7 +110,7 @@ export default defineConfig({
         activeMatch: '/guide/quick-start'
       },
       { text: '组件', link: '/guide/components-list', activeMatch: '/guide/components-list' },
-      { text: 'v0.0.2', link: 'https://github.com/lyuly/wview' }
+      { text: 'v0.0.4', link: 'https://github.com/lyuly/wview' }
     ],
 
     sidebar: {
