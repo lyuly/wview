@@ -1,0 +1,65 @@
+@use '../mixins/mixins.scss' as *;
+@use '../color/color.scss' as *;
+
+@include b(alert) {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  --tw-bg-opacity: 0.3;
+  background-color: rgb(23 114 180 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(23 114 180 / var(--tw-text-opacity));
+
+  @include m(default) {
+    --tw-bg-opacity: 0.3;
+    background-color: rgb(23 114 180 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(23 114 180 / var(--tw-text-opacity));
+  }
+
+  @include m(success) {
+    --tw-bg-opacity: 0.3;
+    background-color: rgb(34 148 83 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(34 148 83 / var(--tw-text-opacity));
+  }
+
+  @include m(warning) {
+    --tw-bg-opacity: 0.3;
+    background-color: rgb(254 186 7 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(254 186 7 / var(--tw-text-opacity));
+  }
+
+  @include m(info) {
+    --tw-bg-opacity: 0.3;
+    background-color: rgb(144 147 153 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(144 147 153 / var(--tw-text-opacity));
+  }
+
+  @include m(danger) {
+    --tw-bg-opacity: 0.3;
+    background-color: rgb(238 63 77 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(238 63 77 / var(--tw-text-opacity));
+  }
+
+  @include m(large) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  @include m(small) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  @include m(mini) {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+  }
+}

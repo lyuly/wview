@@ -15,3 +15,5 @@
 [Select 选择器UI](/components/Form/select.md)
 
 [Upload 上传](/components/Form/upload.md)
+
+[Alert 警告提示](/components/other/alert.md)
