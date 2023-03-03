@@ -7,10 +7,19 @@
 @use '../mixins/mixins.scss' as *;
 @use '../color/color.scss' as *;
 
-@mixin button_style($text-color: $primary, $bg-color: $border-color-lighter, $bd-color: $border-color-lighter) {
+@mixin button_style($text-color, $bg-color, $bd-color) {
   color: $text-color;
   background-color: $bg-color;
   border-color: $border-color-lighter;
+}
+
+@mixin button_disable($color, $bg, $border) {
+  &:disabled,
+  &.disabled {
+    color: $color;
+    background: $bg;
+    border-color: $border;
+  }
 }
 
 @include b(button) {
@@ -39,124 +48,162 @@
     margin: 0 4px;
   
     &.hover {
-      @include button_style($text-color: $primary, $bg-color: $border-color-lighter, $bd-color: $border-color-lighter);
+      @include button_style($primary, $border-color-lighter, $border-color-lighter);
     }
   }
 
   @include m(default) {
-    @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
+    @include button_style($text-color-regular, $white, $border-color-lighter);
 
     &:hover {
-      @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-9);
+      @include button_style($primary-light-3, $white, $primary-light-9);
     }
+
+    @include button_disable($text-color-regular, $white, $border-color-lighter);
 
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $text-color-regular, $bg-color: $white, $bd-color: $border-color-lighter);
+      @include button_style($text-color-regular, $white, $border-color-lighter);
 
       &:hover {
-        @include button_style($text-color: $primary-light-3, $bg-color: $white, $bd-color: $primary-light-3);
+        @include button_style($primary-light-3, $white, $primary-light-3);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($text-color-regular, $white, $border-color-lighter)
       }
     }
   }
 
   @include m(primary) {
-    @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $border-color-lighter);
+    @include button_style($white, $primary, $border-color-lighter);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $primary-light-3, $bd-color: $primary-light-3);
+      @include button_style($white, $primary-light-3, $primary-light-3);
     }
+
+    @include button_disable($white, $primary, $border-color-lighter);
 
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $primary, $bg-color: $white, $bd-color: $primary);
+      @include button_style($primary, $white, $primary);
 
       &:hover {
-        @include button_style($text-color: $white, $bg-color: $primary, $bd-color: $primary);
+        @include button_style($white, $primary, $primary);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($primary, $white, $primary)
       }
     }
   }
 
   @include m(success) {
-    @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
+    @include button_style($white, $success, $success);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $success-light-3, $bd-color: $success-light-3);
+      @include button_style($white, $success-light-3, $success-light-3);
     }
+
+    @include button_disable($white, $success, $success);
   
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $success, $bg-color: $white, $bd-color: $success);
+      @include button_style($success, $white, $success);
   
       &:hover {
-        @include button_style($text-color: $white, $bg-color: $success, $bd-color: $success);
+        @include button_style($white, $success, $success);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($success, $white, $success)
       }
     }
   }
 
   @include m(info) {
-    @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
+    @include button_style($white, $info, $info);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $info-light-3, $bd-color: $info-light-3);
+      @include button_style($white, $info-light-3, $info-light-3);
     }
+
+    @include button_disable($white, $info, $info);
 
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $info, $bg-color: $white, $bd-color: $info);
+      @include button_style($info, $white, $info);
 
       &:hover {
-        @include button_style($text-color: $white, $bg-color: $info, $bd-color: $info);
+        @include button_style($white, $info, $info);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($info, $white, $info)
       }
     }
   }
 
   @include m(danger) {
-    @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
+    @include button_style($white, $danger, $danger);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $danger-light-3, $bd-color: $danger-light-3);
+      @include button_style($white, $danger-light-3, $danger-light-3);
     }
+
+    @include button_disable($white, $danger, $danger);
 
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $danger, $bg-color: $white, $bd-color: $danger);
+      @include button_style($danger, $white, $danger);
 
       &:hover {
-        @include button_style($text-color: $white, $bg-color: $danger, $bd-color: $danger);
+        @include button_style($white, $danger, $danger);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($danger, $white, $danger)
       }
     }
   }
 
   @include m(warning) {
-    @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
+    @include button_style($white, $warning, $warning);
 
     &:hover {
-      @include button_style($text-color: $white, $bg-color: $warning-light-3, $bd-color: $warning-light-3);
+      @include button_style($white, $warning-light-3, $warning-light-3);
     }
+
+    @include button_disable($white, $warning, $warning);
 
     &.isPlain {
       opacity: 1;
-      @include button_style($text-color: $warning, $bg-color: $white, $bd-color: $warning);
+      @include button_style($warning, $white, $warning);
 
       &:hover {
-        @include button_style($text-color: $white, $bg-color: $warning, $bd-color: $warning);
+        @include button_style($white, $warning, $warning);
+      }
+
+      &:disabled,
+      &.disabled {
+        @include button_style($warning, $white, $warning)
       }
     }
   }
 
-  &:hover,
-  &:focus {
-    opacity: .8;
-  }
-
-  &.isDisabled {
+  &.disabled,
+  &[disabled] {
+    box-shadow: none;
     opacity: .6;
-    cursor: no-drop;
+    cursor: not-allowed;
 
-    &:hover,
-    &:focus {
-      opacity: .6;
+    > * {
+      pointer-events: none;
     }
   }
 
