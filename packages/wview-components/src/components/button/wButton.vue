@@ -15,7 +15,7 @@ export default defineComponent({
         isPlain: props.plain,
         isRound: props.round,
         isCircle: props.circle,
-        isDisabled: props.disabled,
+        disabled: props.disabled,
         [`w-button--${props.size}`]: props.size
       }
     })
