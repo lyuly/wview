@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "packages/**/*.{js, ts,vue,jsx,tsx}": [
+    "packages/**/*.{js,ts,vue,jsx,tsx}": [
       "prettier --write",
       "eslint --fix"
     ]

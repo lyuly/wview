@@ -1,15 +1,15 @@
-import { ExtractPropTypes } from "vue"
+import { ExtractPropTypes } from 'vue'
 
-export type breadcrumbOptions = {
-  label: string,
-  to: string,
-  active: boolean
+export interface breadcrumbOptions {
+  label: String
+  to: String
+  active: Boolean
 }
 
-export interface breadcrumbProps {
-  className: string
-  options: breadcrumbOptions[]
-  iconType?: string
+export const breadcrumbProps = {
+  className: String,
+  options: Array<breadcrumbOptions>,
+  iconType: String
 }
 
 export type BreadcrumbProps = ExtractPropTypes<typeof breadcrumbProps>
