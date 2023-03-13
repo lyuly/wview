@@ -2,6 +2,7 @@
 @use '../color/color.scss' as *;
 
 @include b(alert) {
+  display: flex;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -12,6 +13,18 @@
   background-color: rgb(23 114 180 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(23 114 180 / var(--tw-text-opacity));
+
+  @include m(btn) {
+    margin: -.375rem;
+    margin-left: auto;
+    display: inline-flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: .5rem;
+    --tw-bg-opacity: 1;
+    padding: .375rem;
+    --tw-text-opacity: 1;
+  }
 
   @include m(default) {
     --tw-bg-opacity: 0.3;
