@@ -3,6 +3,7 @@ import { Alert } from 'wviewui'
 </script>
 
 <template>
+  <Alert type="danger">默认警告</Alert>
   <Alert type="success" size="mini">成功警告</Alert>
   <Alert type="warning" size="small">严重警告</Alert>
   <Alert type="info">通知警告</Alert>
