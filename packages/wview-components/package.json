@@ -18,7 +18,13 @@
   "files": [
     "dist/*"
   ],
-  "keywords": ["vue3", "typescript", "components", "UI", "vite"],
+  "keywords": [
+    "vue3",
+    "typescript",
+    "components",
+    "UI",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,7 +32,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@types/node": "^18.11.12",

@@ -102,6 +102,10 @@ export default defineConfig({
     },
     lastUpdatedText: '最后更新于',
     logo: '/symbol.svg',
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-present wview'
+    },
     nav: [
       { text: '概览', items: navQuickStart },
       {
@@ -149,12 +153,15 @@ export default defineConfig({
         {
           text: 'Navigation 导航组件',
           collapsible: true,
-          items: [{ text: 'tab 标签页', link: '/components/navigation/tab/tab' }]
+          items: [
+            { text: 'Breadcrumb 面包屑', link: '/components/navigation/breadcrumb/breadcrumb' },
+            { text: 'Tab 标签页', link: '/components/navigation/tab/tab' }
+          ]
         },
         {
           text: 'Other 其他',
           collapsible: true,
-          items: [{ text: 'alert 警告提示', link: '/components/other/alert' }]
+          items: [{ text: 'Alert 警告提示', link: '/components/other/alert' }]
         }
       ]
     }

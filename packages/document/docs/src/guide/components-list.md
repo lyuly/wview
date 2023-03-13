@@ -18,6 +18,8 @@
 
 [Alert 警告提示](/components/other/alert.md)
 
-[model 弹窗](/components/interaction/modal.md)
+[Model 弹窗](/components/interaction/modal.md)
+
+[Breadcrumb 面包屑](/components/navigation/breadcrumb/breadcrumb.md)
 
 [Tab 标签页](/components/navigation/tab/tab.md)
