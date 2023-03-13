@@ -13,7 +13,8 @@ import { default as Tab } from './components/tab'
 import { default as TabPanel } from './components/tab/wTabPanel.vue'
 import { default as Checkbox } from './components/checkbox'
 import { default as Alert } from './components/alert'
+import { default as Breadcrumb } from './components/breadcrumb'
 
-export { Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox, Alert }
+export { Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox, Alert, Breadcrumb }
 
-export default [Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox, Alert]
+export default [Button, Icon, Select, Input, Progress, Upload, Modal, Tab, TabPanel, Checkbox, Alert, Breadcrumb]

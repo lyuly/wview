@@ -106,9 +106,11 @@ importers:
       vite: ^4.0.0
       vite-plugin-dts: ^1.7.1
       vue: ^3.2.45
+      vue-router: '4'
       vue-tsc: ^1.0.12
     dependencies:
       vue: 3.2.47
+      vue-router: registry.npmjs.org/vue-router/4.1.6_vue@3.2.47
     devDependencies:
       '@types/node': 18.13.0
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
@@ -4858,6 +4860,12 @@ packages:
       pretty-format: registry.npmjs.org/pretty-format/27.5.1
     dev: true
 
+  registry.npmjs.org/@vue/devtools-api/6.5.0:
+    resolution: {integrity: sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.5.0.tgz}
+    name: '@vue/devtools-api'
+    version: 6.5.0
+    dev: false
+
   registry.npmjs.org/abab/2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/abab/-/abab-2.0.6.tgz}
     name: abab
@@ -7266,6 +7274,18 @@ packages:
       - supports-color
       - terser
     dev: true
+
+  registry.npmjs.org/vue-router/4.1.6_vue@3.2.47:
+    resolution: {integrity: sha512-DYWYwsG6xNPmLq/FmZn8Ip+qrhFEzA14EI12MsMgVxvHFDYvlr4NXpVF5hrRH1wVcDP8fGi5F4rxuJSl8/r+EQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/vue-router/-/vue-router-4.1.6.tgz}
+    id: registry.npmjs.org/vue-router/4.1.6
+    name: vue-router
+    version: 4.1.6
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': registry.npmjs.org/@vue/devtools-api/6.5.0
+      vue: 3.2.47
+    dev: false
 
   registry.npmjs.org/w3c-xmlserializer/4.0.0:
     resolution: {integrity: sha512-d+BFHzbiCx6zGfz0HyQ6Rg69w9k19nviJspaj4yNscGjrHu94sVP+aRm75yEbCh+r2/yR+7q6hux9LVtbuTGBw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/w3c-xmlserializer/-/w3c-xmlserializer-4.0.0.tgz}
