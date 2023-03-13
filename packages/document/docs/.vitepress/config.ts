@@ -1,12 +1,12 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vitepress'
-import MarkitDownInclude from 'markdown-it-include'
-import DefineOptions from 'unplugin-vue-define-options/vite'
+import { resolve } from 'path';
+import { defineConfig } from 'vitepress';
+import MarkitDownInclude from 'markdown-it-include';
+import DefineOptions from 'unplugin-vue-define-options/vite';
 
-const production = process.env.NODE_ENV === 'production'
-const site = production ? 'https://wview.icu' : 'http://localhost:3000'
-const title = 'wview组件库'
-const description = '轻量，灵活，可定制化，采用中国色的Vue3组件库'
+const production = process.env.NODE_ENV === 'production';
+const site = production ? 'https://wview.icu' : 'http://localhost:3000';
+const title = 'wview组件库';
+const description = '轻量，灵活，可定制化，采用中国色的Vue3组件库';
 
 const navQuickStart = [
   { text: '介绍', link: '/guide/introduction' },
@@ -14,7 +14,7 @@ const navQuickStart = [
   { text: '配置', link: '/guide/configuration' },
   { text: '快速开始', link: '/guide/quick-start' },
   { text: '共享', link: '/guide/props' }
-]
+];
 
 export default defineConfig({
   // vue配置
@@ -64,10 +64,7 @@ export default defineConfig({
     ['meta', { name: 'author', content: '什么队' }],
     ['meta', { name: '关键字', content: '组件, vue' }],
     ['meta', { rel: 'icon', type: 'image/svg+xml' }],
-    [
-      'meta',
-      { name: 'keywords', content: 'components, vue, vue3, typeScript, chinacolor' }
-    ],
+    ['meta', { name: 'keywords', content: 'components, vue, vue3, typeScript, chinacolor' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/symbol.svg' }],
     ['meta', { name: 'HandheldFriendly', content: 'True' }],
     ['meta', { name: 'MobileOptimized', content: '320' }],
@@ -88,7 +85,7 @@ export default defineConfig({
   // 插件配置
   markdown: {
     config(md) {
-      md.use(MarkitDownInclude)
+      md.use(MarkitDownInclude);
     },
     // 行号
     lineNumbers: true
@@ -114,7 +111,7 @@ export default defineConfig({
         activeMatch: '/guide/quick-start'
       },
       { text: '组件', link: '/guide/components-list', activeMatch: '/guide/components-list' },
-      { text: 'v0.0.5', link: 'https://github.com/lyuly/wview' }
+      { text: 'v0.0.6', link: 'https://github.com/lyuly/wview' }
     ],
 
     sidebar: {
@@ -166,4 +163,4 @@ export default defineConfig({
       ]
     }
   }
-})
+});
