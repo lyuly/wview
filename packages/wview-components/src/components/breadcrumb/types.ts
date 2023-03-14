@@ -1,9 +1,9 @@
 import { ExtractPropTypes } from 'vue'
 
 export interface breadcrumbOptions {
-  label: String
-  to: String
-  active: Boolean
+  label?: string
+  to?: string
+  active?: boolean
 }
 
 export const breadcrumbProps = {

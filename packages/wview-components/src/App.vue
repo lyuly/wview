@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Breadcrumb } from 'wviewui'
+import wBreadcrumb from './components/breadcrumb'
 import { reactive } from 'vue'
 
 const options = reactive([
@@ -22,7 +22,9 @@ const options = reactive([
 </script>
 
 <template>
-  <Breadcrumb :options="options" />
+  <div>
+    <wBreadcrumb :options="options" />
+  </div>
 </template>
 
 <style scoped></style>

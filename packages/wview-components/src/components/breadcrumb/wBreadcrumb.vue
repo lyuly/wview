@@ -5,15 +5,21 @@ import { breadcrumbProps } from './types'
 export default defineComponent({
   name: 'w-breadcrumb',
   props: breadcrumbProps,
-  setup (props) {}
+  setup (props) {
+    return props.options
+  }
 })
 </script>
 
 <template>
-  <div>
-    <router-link to="/">Home</router-link>
-    <router-link to="/category">Category</router-link>
-  </div>
+  <nav aria-label="breadcrumb" style="width: 100%; border-radius: 0.375rem">
+    <ol class="breadcrumb" style="display: flex; list-style: none; margin: 0; padding: 0">
+      <li class="breadcrumb-item" v-for="(crumb, index) in options" :key="index">
+        <a v-if="crumb.to" :href="crumb.to">{{ crumb.label }}</a>
+        <span v-else>{{ crumb.label }}</span>
+      </li>
+    </ol>
+  </nav>
 </template>
 
 <style scoped></style>
