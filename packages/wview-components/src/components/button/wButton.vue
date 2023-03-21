@@ -1,8 +1,9 @@
 <script lang="ts">
 import '@/styles/components/button.scss'
-import { defineComponent, computed, useSlots } from 'vue'
+import { defineComponent, computed, useSlots, defineAsyncComponent } from 'vue'
 import { buttonProps } from './types'
-import wIcon from '../icons'
+
+const wIcon = defineAsyncComponent(() => import('../icons'))
 
 export default defineComponent({
   name: 'w-button',
